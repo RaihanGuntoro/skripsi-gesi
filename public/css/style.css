@@ -1,0 +1,136 @@
+
+.navbar-1{
+    background-color: white;
+}
+
+.blue {
+    color:  #38ABF2;
+}
+
+.white {
+    color: white;
+}
+
+.p-15{
+    padding: 15px 15px 15px;
+}
+
+.p-10{
+    padding: 10px 10px 10px;
+}
+
+.card-edit{
+    border-radius: 20px;
+    box-shadow: 0px 4px 0px rgb(162, 162, 162) ;
+
+}
+
+.card-penyuluh {
+    background-color:  #38ABF2;
+    padding: 30px 30px 30px;
+    width: 500px;
+}
+
+.card-program {
+    padding: 15px 15px 15px;
+    background-color: #C8E9FD;
+    box-shadow: 0px 2px 0px gray;
+    border: 1px solid #C8E9FD;
+}
+
+.card-kontrasepsi{
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 15px;
+    box-shadow: 0px 2px 0px gray;
+}
+
+.td-none{
+    text-decoration: none;
+    color: black;
+}
+
+.br-5{
+    border-radius: 5px;
+}
+
+.poppins{
+    font-family: poppins;
+}
+
+.br-10{
+    border-radius: 10px;
+}
+
+.br-15{
+    border-radius: 15px;
+}
+
+.teks-navbar{
+    font-family: poppins;
+}
+
+.btn-blue{
+    background-color: #38b6ff;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 100%;
+    /* box-shadow: 3px 3px 3px gray; */
+}
+
+.btn-blue:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.btn-blue2{
+    background-color: #299BE2;
+    color: white;
+    border-radius: 15px;
+    width: 110px;
+    height: 35px;
+}
+
+.btn-blue2:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.ms-midle{
+    margin-right: 38%;
+}
+
+.card1{
+    border-radius: 15px;
+    border: 1px solid rgb(185, 182, 182);
+}
+
+.icon {
+    padding: 10px;
+    background:#38b6ff;
+    color: rgb(0, 0, 0);
+    min-width: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-admin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer{
+    background-color: #38ABF2;
+    padding: 3px;
+    color: white;
+    
+}
+
