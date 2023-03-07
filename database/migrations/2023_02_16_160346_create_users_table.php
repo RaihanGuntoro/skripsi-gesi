@@ -17,6 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('nama_admin');
             $table->string('nomor_admin');
+            $table->string('email_admin');
             $table->string('password_admin');
             $table->timestamps();
         });

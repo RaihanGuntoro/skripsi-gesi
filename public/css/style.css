@@ -26,16 +26,21 @@
 }
 
 .card-penyuluh {
-    background-color:  #38ABF2;
-    padding: 30px 30px 30px;
+    /* background-color:  #38ABF2; */
+    border: 3px solid #38ABF2;
+    padding: 20px 20px 20px;
     width: 500px;
 }
 
 .card-program {
     padding: 15px 15px 15px;
     background-color: #C8E9FD;
-    box-shadow: 0px 2px 0px gray;
+    box-shadow: 0px 2px 0px rgb(208, 205, 205);
     border: 1px solid #C8E9FD;
+}
+
+.card-motivasi {
+    border: none;
 }
 
 .card-kontrasepsi{
@@ -133,4 +138,3 @@ footer{
     color: white;
     
 }
-

@@ -16,7 +16,7 @@ class CreatePenyuluhsTable extends Migration
         Schema::create('penyuluhs', function (Blueprint $table) {
             $table->id();
             $table->string('nama_penyuluh');
-            $table->integer('nomor_penyuluh');
+            $table->string('nomor_penyuluh');
             $table->text('alamat_penyuluh');
             $table->timestamps();
         });

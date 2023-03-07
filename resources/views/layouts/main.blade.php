@@ -12,7 +12,7 @@
 
 <body>
     <section>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-1 " style="box-shadow: 0px 2px 0px gray;">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow" >
             <div class="container-fluid justify-content-between">
 
                 <img src="img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0">
@@ -35,13 +35,13 @@
     <div class="mt-5 mb-5" style="margin-left: 10%;">
         <img src="img/bkkbn.png" width="200px" class="mb-3" alt="">
         <h4 class="mb-3">BKKBN Kecamatan Gesi</h4>
-        <h6>Jln. Gesi Tangen</h6>
-        <h6> Kecamatan Gesi Kabupaten Sragen Jawa Tengah </h6>
-        <h6> Kode Pos XXXX</h6>
+        <h6>Jl. Gesi Tangen</h6>
+        <h6> Kecamatan Gesi, Kabupaten Sragen, Jawa Tengah </h6>
+        <h6> Kode Pos 57262</h6>
     </div>
 
-    <footer>
-        <p class="text-center ">Copy Right BKKBN Kecamatan Gesi</p>
+    <footer class="text-center">
+        <h7 >Copy Right BKKBN Kecamatan Gesi</h7>
     </footer>
 
 </body>

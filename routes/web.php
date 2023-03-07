@@ -3,22 +3,22 @@
 
 use App\Models\kontrasepsi;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\KontrasepsiController;
  
 
-Route::get('/', [ProgramController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/login',  [LoginController::class, 'index']);
 Route::post('/login',  [LoginController::class, 'authenticate']);
 
-Route::get('/edit', function () {
-    return view('edit/edit_utama');
-});
+Route::get('/edit_admin',  [AdminController::class, 'index']);
+Route::post('/edit_admin',  [AdminController::class, 'create']);
 
-Route::get('/edit_admin', function () {
-    return view('edit/edit_admin');
+Route::get('/edit_utama', function () {
+    return view('edit/edit_utama');
 });
 
 Route::get('/pengguna', function () {

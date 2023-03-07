@@ -12,7 +12,7 @@
 
 <body style="background-image: url(../img/bg1.png)">
 
-    <nav class="navbar navbar-expand-lg navbar-light navbar-1 ">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow ">
         <div class="container-fluid justify-content-between">
 
             <img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0">

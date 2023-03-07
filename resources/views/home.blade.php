@@ -14,7 +14,7 @@
 
                 <div class=" d-flex mt-2 mb-3 justify-content-between">
 
-                    <div class="card  card-kontrasepsi col-sm-6 " style="width: 17rem;">
+                    <div class="card  card-kontrasepsi col-sm-6 " style="width: 20rem;">
                         <center>
                             <img src="img/icon/kondom.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -24,7 +24,7 @@
                         </div>
                     </div>
 
-                    <div class="card ms-3 card-kontrasepsi col-sm-6" style="width: 17rem;">
+                    <div class="card ms-3 card-kontrasepsi col-sm-6" style="width: 20rem;">
                         <center>
                             <img src="img/icon/iud.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="card ms-3 card-kontrasepsi col-sm-6" style="width: 17rem;">
+                    <div class="card ms-3 card-kontrasepsi col-sm-6" style="width: 20rem;">
                         <center>
                             <img src="img/icon/pills.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -44,17 +44,8 @@
                         </div>
                     </div>
 
-                    <div class="card ms-3 card-kontrasepsi col-sm-6" style="width: 17rem;">
-                        <center>
-                            <img src="img/icon/pills.png" width="100px" class="mt-3" alt="...">
-                        </center>
-                        <div class="card-body">
-                            <h5 class="card-title">PIL</h5>
-                            <h6 class="card-text lh-base poppins">PIL KB adalah sebuah jenis pengendalian kelahiran yang dirancang untuk dipakai dengan cara ditelan lewat mulut oleh wanita.</h6>
-                        </div>
-                    </div>
                     <div>
-                        <a href="/kontrasepsi"> <img src="img/icon/next.png" class="mt-100 ms-3 col-sm-6" width="70px" alt=""></a>
+                        <a href="/kontrasepsi"> <img src="img/icon/next.png" class="mt-100 ms-3 " width="70px" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -75,11 +66,6 @@
 
         </div>
         @endforeach
-        <div class="card br-10 card-program mb-3  ms-3 me-3">
-            <h4>Acaraaaaaaaaaaaaaaaaaaaaaaaaaaaa</h4>
-            <h6>24 januari 2020</h6>
-            <h5>Di Lapangan Gesi</h5>
-        </div>
     </div>
 </section>
 
@@ -88,9 +74,9 @@
         <div class="col-md-6">
             <div class="container">
                 <center>
-                    <div class="card mt-5" style="max-width: 400px;">
-                        <h5 class="text-start">"Ingatlah, saat semuanya runtuh dan gagal, keluarga adalah tempatmu kembali. Rencanakanlah dengan tepat, konsultasikanlah sebelum terlambat."</h5>
-                        <h4 class="fw-bold text-start">-BKKBN Kecamatan Gesi</h4>
+                    <div class="card card-motivasi text-center mt-5" style="max-width: 400px;">
+                        <h5 class="text-center mt-3">Ingatlah, saat semuanya runtuh dan gagal, keluarga adalah tempatmu kembali. Rencanakanlah dengan tepat, konsultasikanlah sebelum terlambat.</h5>
+                        <h4 class="fw-bold text-center">BKKBN Kecamatan Gesi</h4>
                     </div>
                 </center>
 
@@ -98,32 +84,26 @@
         </div>
 
         <div class="col-md-6">
-            <div class="card card-penyuluh mt-3 ms-5 br-15 ">
+            <div class="card card-penyuluh mt-2 ms-5 br-15 ">
                 <h3 class="poppins ">Contact Penyuluh</h3>
                 <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Nama</th>
-                            <th scope="col">No HP</th>
+                            <th scope="col">Alamat</th>
+                            <th scope="col">Contact</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach ($penyuluh as $item)
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Jokowi</td>
-                            <td>081393009367</td>
+                            <th scope="row" class="h6">{{ $item['id'] }}</th>
+                            <td class="h6">{{ $item['nama_penyuluh'] }}</td>
+                            <td class="h6">{{ $item['alamat_penyuluh'] }}</td>
+                            <td class="h6 "> <a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=62{{ $item['nomor_penyuluh'] }} ">Whatsapp</a></td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Prabowo</td>
-                            <td>081804433569</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Ferdy Sambo</td>
-                            <td>081804433569</td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

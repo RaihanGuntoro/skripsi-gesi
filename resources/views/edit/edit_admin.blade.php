@@ -19,27 +19,15 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($users as $admin)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Baharudin</td>
-                                    <td>baharGamink@gmail.com</td>
-                                    <td>081393009367</td>
+                                    <th scope="row"> {{ $admin['id'] }} </th>
+                                    <td> {{ $admin['nama_admin'] }} </td>
+                                    <td>{{ $admin['email_admin'] }}</td>
+                                    <td> {{ $admin['nomor_admin'] }} </td>
                                     <td><button type="" class="btn btn-danger br-10">Delete</button></td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Febi</td>
-                                    <td>Kucingmalas@gmail.com</td>
-                                    <td>081804433569</td>
-                                    <td><button type="" class="btn btn-danger br-10">Delete</button></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Ferdy</td>
-                                    <td>Josua@gmail.com</td>
-                                    <td>081804433569</td>
-                                    <td><button type="" class="btn btn-danger br-10">Delete</button></td>
-                                </tr>
+                                @endforeach 
 
                             </tbody>
                         </table>
@@ -53,18 +41,23 @@
                 <div class="card mt-5 br-15  card-admin">
                     <div class="card-body ">
                         <h3 class="poppins text-center">Tambah Admin</h3>
-                        <form class="mt-3">
+                        <form class="mt-3" method="post" action="/edit_admin">
+                            @csrf
                             <div class="mb-3">
-                                <label for="" class="form-label">Nama Admin</label>
-                                <input type="text" class="form-control" id="" aria-describedby="emailHelp">
+                                <label for="nama_admin" class="form-label">Nama Admin</label>
+                                <input type="text" class="form-control" id="nama_admin" name="nama_admin">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Masukkan Email </label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <label for="nomor_admin" class="form-label">Nomor Admin</label>
+                                <input type="text" class="form-control" id="nomor_admin" name="nomor_admin">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Masukkan Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="email_admin" class="form-label">Masukkan Email </label>
+                                <input type="email" class="form-control" id="email_admin" name="email_admin">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password_admin" class="form-label">Masukkan Password</label>
+                                <input type="password" class="form-control" id="password_admin" name="password_admin">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>

@@ -18,7 +18,7 @@ class CreateKontrasepsisTable extends Migration
             $table->string('nama_kontrasepsi');
             $table->string('gambar_kontrasepsi');
             $table->string('kode_kontrasepsi');
-            $table->integer('jumlah_kontrasepsi');
+            $table->string('jumlah_kontrasepsi');
             $table->text('deskripsi_kontrasepsi');
             $table->timestamps();
         });

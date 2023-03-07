@@ -42,18 +42,18 @@
                             @csrf
                             <legend class=" h3  text-center fw-bold blue">LOGIN FORM</legend>
                             <div class="mb-3">
-                                <label for="nomor" class="form-label mt-3 fw-bold">Nomor Handphone :</label>
+                                <label for="nomor_admin" class="form-label mt-3 fw-bold">Nomor Handphone :</label>
                                 <div class="d-flex">
                                     <i class="fa fa-duotone fa-mobile icon fa-lg"></i>
-                                    <input type="text" name="nomor_admin" class="form-control" id="nomor" placeholder="Masukkan Nomor HP Anda" aria-describedby="emailHelp" autofocus required> 
+                                    <input type="text" name="nomor_admin" class="form-control" id="nomor_admin" placeholder="Masukkan Nomor HP Anda"  autofocus required> 
                                 </div> 
 
                             </div>
                             <div class="mb-3">
-                                <label for="password" class="form-label fw-bold">Password :</label>
+                                <label for="password_admin" class="form-label fw-bold">Password :</label>
                                 <div class="d-flex">
                                     <i class="fa fa-lock icon fa-sm"></i>
-                                    <input type="password" name="password_admin" id="password" class="form-control" placeholder="Masukkan Password Anda" required>
+                                    <input type="password" name="password_admin" id="password_admin" class="form-control" placeholder="Masukkan Password Anda" required>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-blue mt-3 mb-3">LOGIN</button>
