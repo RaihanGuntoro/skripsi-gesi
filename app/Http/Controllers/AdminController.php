@@ -20,4 +20,11 @@ class AdminController extends Controller
         user::create($request->all());
         return redirect('/edit_admin');
     }
+
+    public function delete ($id)
+    {
+        $data = user::find($id);
+        $data -> delete();
+        return redirect('/edit_admin');
+    }
 }

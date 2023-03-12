@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="card card-edit poppins" style="width: 17rem; height: 14rem">
-                        <a href="" class="td-none">
+                        <a href="/edit_kontrasepsi" class="td-none">
                             <center>
                                 <img src="img/icon/kontrasepsi.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">
@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="card card-edit poppins" style="width: 17rem; height: 14rem">
-                        <a href="" class="td-none">
+                        <a href="/edit_program" class="td-none">
                             <center>
                                 <img src="img/icon/program.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">
@@ -49,7 +49,7 @@
                 <div class="d-flex mt-4 justify-content-evenly">
 
                     <div class="card card-edit poppins" style="width: 17rem; height: 14rem">
-                        <a href="" class="td-none">
+                        <a href="/edit_penyuluh" class="td-none">
                             <center>
                                 <img src="img/icon/penyuluh.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">

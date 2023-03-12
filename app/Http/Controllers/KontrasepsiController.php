@@ -15,9 +15,24 @@ class KontrasepsiController extends Controller
         ]);
     }
 
-    // public function index()    //nama methodnya index
-    // {
-    //     $data_kontrasepsi = kontrasepsi::all();
-    //     return view('kontrasepsi',  $data_kontrasepsi);
-    // }
+    public function index2()    //nama methodnya index
+    {
+        return view('edit/edit_kontrasepsi', [
+            "title" => "Edit Kontrasepsi",
+            "kontrasepsis" => kontrasepsi::all()   //kontrasepsi mengambil dari model
+        ]);
+    }
+
+    public function create ( Request $request)
+    {
+        kontrasepsi::create($request->all());
+        return redirect('/edit_kontrasepsi');
+    }
+
+    public function delete ($id)
+    {
+        $data = kontrasepsi::find($id);
+        $data -> delete();
+        return redirect('/edit_kontrasepsi');
+    }
 }

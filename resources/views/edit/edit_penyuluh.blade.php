@@ -7,31 +7,32 @@
             <div class="container">
                 <div class="card mt-5 br-15  card-admin">
                     <div class="card-body ">
-                        <h3 class="poppins text-center">Daftar Admin</h3>
+                        <h3 class="poppins text-center">Daftar Penyuluh</h3>
                         <table class="table mt-4">
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
                                     <th scope="col">Nama</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">No HP</th>
+                                    <th scope="col">Nomor</th>
+                                    <th scope="col">Alamat</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
+
                                 @php
                                     $nomor = 1;
                                 @endphp
 
-                                @foreach ($users as $admin)
+                                @foreach ($penyuluh as $item)
                                 <tr>
                                     <th scope="row"> {{ $nomor++ }} </th>
-                                    <td> {{ $admin['nama_admin'] }} </td>
-                                    <td>{{ $admin['email_admin'] }}</td>
-                                    <td> {{ $admin['nomor_admin'] }} </td>
-                                    <td> <a href="/delete_admin/{{ $admin -> id }}" class="btn btn-danger br-10">Delete</a> </td>
+                                    <td> {{ $item['nama_penyuluh'] }} </td>
+                                    <td>{{ $item['nomor_penyuluh'] }}</td>
+                                    <td> {{ $item['alamat_penyuluh'] }} </td>
+                                    <td> <a href="/delete_penyuluh/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>
                                 </tr>
-                                @endforeach 
+                                @endforeach
 
                             </tbody>
                         </table>
@@ -44,25 +45,22 @@
             <div class="container">
                 <div class="card mt-5 br-15  card-admin">
                     <div class="card-body ">
-                        <h3 class="poppins text-center">Tambah Admin</h3>
-                        <form class="mt-3" method="post" action="/edit_admin">
+                        <h3 class="poppins text-center">Tambah Penyuluh</h3>
+                        <form class="mt-3" method="post" action="/edit_penyuluh">
                             @csrf
                             <div class="mb-3">
-                                <label for="nama_admin" class="form-label">Nama Admin</label>
-                                <input type="text" class="form-control" id="nama_admin" name="nama_admin">
+                                <label for="nama_penyuluh" class="form-label">Nama Penyuluh</label>
+                                <input type="text" class="form-control" id="nama_penyuluh" name="nama_penyuluh">
                             </div>
                             <div class="mb-3">
-                                <label for="nomor_admin" class="form-label">Nomor Admin</label>
-                                <input type="text" class="form-control" id="nomor_admin" name="nomor_admin">
+                                <label for="nomor_penyuluh" class="form-label">Nomor Penyuluh</label>
+                                <input type="text" class="form-control" id="nomor_penyuluh" name="nomor_penyuluh">
                             </div>
                             <div class="mb-3">
-                                <label for="email_admin" class="form-label">Masukkan Email </label>
-                                <input type="email" class="form-control" id="email_admin" name="email_admin">
+                                <label for="alamat_penyuluh" class="form-label">Alamat Penyuluh</label>
+                                <input type="text" class="form-control" id="alamat_penyuluh" name="alamat_penyuluh">
                             </div>
-                            <div class="mb-3">
-                                <label for="password_admin" class="form-label">Masukkan Password</label>
-                                <input type="password" class="form-control" id="password_admin" name="password_admin">
-                            </div>
+
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
