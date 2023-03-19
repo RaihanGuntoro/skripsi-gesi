@@ -63,7 +63,7 @@
                                 <label for="password_admin" class="form-label">Masukkan Password</label>
                                 <input type="password" class="form-control" id="password_admin" name="password_admin">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit"  class=" btn btn-tambah mt-1">Submit</button>
                         </form>
                     </div>
                 </div>

@@ -18,6 +18,7 @@ class CreateProgramsTable extends Migration
             $table->string('nama_program');
             $table->date('tanggal_program');
             $table->string('lokasi_program');
+            $table->enum('pelaksanaan_program',['Terlaksana', 'Proses']);
             $table->timestamps();
         });
     }

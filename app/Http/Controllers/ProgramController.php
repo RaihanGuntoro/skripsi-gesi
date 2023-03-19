@@ -15,16 +15,30 @@ class ProgramController extends Controller
         ]);
     }
 
-    public function create ( Request $request)
+    public function create(Request $request)
     {
         program::create($request->all());
         return redirect('/edit_program');
     }
 
-    public function delete ($id)
+    public function delete($id)
     {
         $data = program::find($id);
-        $data -> delete();
+        $data->delete();
+        return redirect('/edit_program');
+    }
+
+    public function tampilkan($id)
+    {
+        $data = program::find($id);
+
+        return view('edit/update_program', compact('data'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = program::find($id);
+        $data->update($request->all());
         return redirect('/edit_program');
     }
 }

@@ -23,16 +23,21 @@ class KontrasepsiController extends Controller
         ]);
     }
 
-    public function create ( Request $request)
+    public function create(Request $request)
     {
-        kontrasepsi::create($request->all());
+        $data = kontrasepsi::create($request->all());
+        if ($request->hasFile('gambar_kontrasepsi')) {
+            $request->file('gambar_kontrasepsi')->move('gambarkontrasepsi/', $request->file('gambar_kontrasepsi')->getClientOriginalName());
+            $data->gambar_kontrasepsi = $request->file('gambar_kontrasepsi')->getClientOriginalName();
+            $data->save();
+        }
         return redirect('/edit_kontrasepsi');
     }
 
-    public function delete ($id)
+    public function delete($id)
     {
         $data = kontrasepsi::find($id);
-        $data -> delete();
+        $data->delete();
         return redirect('/edit_kontrasepsi');
     }
 }

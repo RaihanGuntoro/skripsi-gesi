@@ -60,9 +60,10 @@
         @foreach ($programs as $coba)
         <div class="card br-10 card-program mb-3 ms-3 me-3">
 
-            <h4> {{ $coba['nama_program'] }} </h4>
-            <h6> {{ $coba['tanggal_program'] }} </h6>
-            <h5> {{ $coba['lokasi_program'] }} </h5>
+            <h4> {{ $coba -> nama_program }} </h4>
+            <h6> {{ $coba -> tanggal_program }} </h6>
+            <h5> {{ $coba -> lokasi_program }} </h5>
+            <h5 style="color: red;"> {{ $coba -> pelaksanaan_program }} </h5>
 
         </div>
         @endforeach
@@ -96,11 +97,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @php
+                            $nomor = 1;
+                        @endphp
+
                         @foreach ($penyuluh as $item)
                         <tr>
-                            <th scope="row" class="h6">{{ $item['id'] }}</th>
-                            <td class="h6">{{ $item['nama_penyuluh'] }}</td>
-                            <td class="h6">{{ $item['alamat_penyuluh'] }}</td>
+                            <th scope="row" class="h6">{{ $nomor++ }}</th>
+                            <td class="h6">{{ $item -> nama_penyuluh }}</td>
+                            <td class="h6">{{ $item -> alamat_penyuluh }}</td>
                             <td class="h6 "> <a class="text-decoration-none" href="https://api.whatsapp.com/send?phone=62{{ $item['nomor_penyuluh'] }} ">Whatsapp</a></td>
                         </tr>
                         @endforeach

@@ -27,9 +27,9 @@
                                 @foreach ($penyuluh as $item)
                                 <tr>
                                     <th scope="row"> {{ $nomor++ }} </th>
-                                    <td> {{ $item['nama_penyuluh'] }} </td>
-                                    <td>{{ $item['nomor_penyuluh'] }}</td>
-                                    <td> {{ $item['alamat_penyuluh'] }} </td>
+                                    <td> {{ $item -> nama_penyuluh }} </td>
+                                    <td>{{ $item -> nomor_penyuluh }}</td>
+                                    <td> {{ $item -> alamat_penyuluh }} </td>
                                     <td> <a href="/delete_penyuluh/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>
                                 </tr>
                                 @endforeach
@@ -61,7 +61,7 @@
                                 <input type="text" class="form-control" id="alamat_penyuluh" name="alamat_penyuluh">
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit"  class=" btn btn-tambah mt-1">Submit</button>
                         </form>
                     </div>
                 </div>

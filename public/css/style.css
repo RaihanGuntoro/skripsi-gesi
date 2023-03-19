@@ -105,6 +105,22 @@
     
 }
 
+.btn-tambah{
+    background-color: #299BE2;
+    color: white;
+    border-radius: 15px;
+    width: 110px;
+    height: 40px;
+}
+
+.btn-tambah:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
 .mt-100{
     margin-top: 100px;
 }

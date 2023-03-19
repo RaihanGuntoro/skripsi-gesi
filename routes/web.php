@@ -27,6 +27,8 @@ Route::get('/delete_kontrasepsi/{id}',  [KontrasepsiController::class, 'delete']
 Route::get('/edit_program',  [ProgramController::class, 'index']);
 Route::post('/edit_program',  [ProgramController::class, 'create']);
 Route::get('/delete_program/{id}',  [ProgramController::class, 'delete']);
+Route::get('/tampilkan_program/{id}',  [ProgramController::class, 'tampilkan']);
+Route::post('/update_program/{id}',  [ProgramController::class, 'update']);
 
 Route::get('/edit_penyuluh',  [PenyuluhController::class, 'index']);
 Route::post('/edit_penyuluh',  [PenyuluhController::class, 'create']);
