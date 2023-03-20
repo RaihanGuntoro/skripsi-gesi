@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow ">
         <div class="container-fluid justify-content-between">
 
-            <img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0">
+            <a href="/"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

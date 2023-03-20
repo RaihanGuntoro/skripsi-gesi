@@ -50,15 +50,15 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="nama_penyuluh" class="form-label">Nama Penyuluh</label>
-                                <input type="text" class="form-control" id="nama_penyuluh" name="nama_penyuluh">
+                                <input type="text" class="form-control" id="nama_penyuluh" name="nama_penyuluh" autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <label for="nomor_penyuluh" class="form-label">Nomor Penyuluh</label>
-                                <input type="text" class="form-control" id="nomor_penyuluh" name="nomor_penyuluh">
+                                <input type="text" class="form-control" id="nomor_penyuluh" name="nomor_penyuluh" autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <label for="alamat_penyuluh" class="form-label">Alamat Penyuluh</label>
-                                <input type="text" class="form-control" id="alamat_penyuluh" name="alamat_penyuluh">
+                                <input type="text" class="form-control" id="alamat_penyuluh" name="alamat_penyuluh" autocomplete="off">
                             </div>
 
                             <button type="submit"  class=" btn btn-tambah mt-1">Submit</button>

@@ -55,23 +55,23 @@
                         @csrf
                         <div class="mb-3">
                             <label for="nama_kontrasepsi" class="form-label">Nama Kontrasepsi</label>
-                            <input type="text" class="form-control" id="nama_kontrasepsi" name="nama_kontrasepsi">
+                            <input type="text" class="form-control" id="nama_kontrasepsi" name="nama_kontrasepsi" autocomplete="off">
                         </div>
                         <div class="mb-3">
                             <label for="gambar_kontrasepsi" class="form-label">Gambar Kontrasepsi</label>
-                            <input type="file" class="form-control" id="gambar_kontrasepsi" name="gambar_kontrasepsi">
+                            <input type="file" class="form-control" id="gambar_kontrasepsi" name="gambar_kontrasepsi" autocomplete="off">
                         </div>
                         <div class="mb-3">
                             <label for="kode_kontrasepsi" class="form-label">Kode Kontrasepsi</label>
-                            <input type="text" class="form-control" id="kode_kontrasepsi" name="kode_kontrasepsi">
+                            <input type="text" class="form-control" id="kode_kontrasepsi" name="kode_kontrasepsi" autocomplete="off">
                         </div>
                         <div class="mb-3">
                             <label for="jumlah_kontrasepsi" class="form-label">Jumlah Kontrasepsi</label>
-                            <input type="text" class="form-control" id="jumlah_kontrasepsi" name="jumlah_kontrasepsi">
+                            <input type="text" class="form-control" id="jumlah_kontrasepsi" name="jumlah_kontrasepsi" autocomplete="off">
                         </div>
                         <div class="mb-3">
                             <label for="deskripsi_kontrasepsi" class="form-label">Deskripsi Kontrasepsi</label>
-                            <input type="text" class="form-control" id="deskripsi_kontrasepsi" name="deskripsi_kontrasepsi">
+                            <input type="text" class="form-control" id="deskripsi_kontrasepsi" name="deskripsi_kontrasepsi" autocomplete="off">
                         </div>
                         <button type="submit"  class=" btn btn-tambah mt-1">Submit</button>
                     </form>

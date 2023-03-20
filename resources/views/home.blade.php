@@ -12,9 +12,9 @@
             <div class="card br-15 p-15" style="box-shadow: 0px 3px 0px gray; margin-left: 50px; margin-right: 50px">
                 <h3 class=" fw-bold mt-2 ms-2">Alat-alat Kontrasepsi</h3>
 
-                <div class=" d-flex mt-2 mb-3 justify-content-between">
+                <div class="row d-flex ms-2 mt-2 mb-3 justify-content-between">
 
-                    <div class="card  card-kontrasepsi col-sm-6 " style="width: 20rem;">
+                    <div class="card  card-kontrasepsi col-sm-3 " style="width: 20rem;">
                         <center>
                             <img src="img/icon/kondom.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -24,7 +24,7 @@
                         </div>
                     </div>
 
-                    <div class="card ms-3 card-kontrasepsi col-sm-6" style="width: 20rem;">
+                    <div class="card  card-kontrasepsi col-sm-3" style="width: 20rem;">
                         <center>
                             <img src="img/icon/iud.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="card ms-3 card-kontrasepsi col-sm-6" style="width: 20rem;">
+                    <div class="card  card-kontrasepsi col-sm-3" style="width: 20rem;">
                         <center>
                             <img src="img/icon/pills.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -44,8 +44,8 @@
                         </div>
                     </div>
 
-                    <div>
-                        <a href="/kontrasepsi"> <img src="img/icon/next.png" class="mt-100 ms-3 " width="70px" alt=""></a>
+                    <div class="col-sm-3" style="max-width: 10%;">
+                        <a href="/kontrasepsi"> <img src="img/icon/next.png" class="mt-100 " width="70px" alt=""></a>
                     </div>
                 </div>
             </div>

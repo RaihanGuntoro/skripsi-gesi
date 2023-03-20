@@ -52,15 +52,15 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="nama_program" class="form-label">Nama Program</label>
-                                <input type="text" class="form-control" id="nama_program" name="nama_program">
+                                <input type="text" class="form-control" id="nama_program" name="nama_program" autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <label for="tanggal_program" class="form-label">Tanggal Program</label>
-                                <input type="date" class="form-control" id="tanggal_program" name="tanggal_program">
+                                <input type="date" class="form-control" id="tanggal_program" name="tanggal_program" autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <label for="lokasi_program" class="form-label">Lokasi Program</label>
-                                <input type="text" class="form-control" id="lokasi_program" name="lokasi_program">
+                                <input type="text" class="form-control" id="lokasi_program" name="lokasi_program" autocomplete="off">
                             </div>
 
                             <div class="mb-3">

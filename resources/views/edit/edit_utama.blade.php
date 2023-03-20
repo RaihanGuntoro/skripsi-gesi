@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="card card-edit poppins" style="width: 17rem; height: 14rem">
-                        <a href="/pengguna" class="td-none">
+                        <a href="/edit_pengguna" class="td-none">
                             <center>
                                 <img src="img/icon/pengguna.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">

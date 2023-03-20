@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\PenyuluhController;
 use App\Http\Controllers\KontrasepsiController;
  
@@ -34,12 +35,16 @@ Route::get('/edit_penyuluh',  [PenyuluhController::class, 'index']);
 Route::post('/edit_penyuluh',  [PenyuluhController::class, 'create']);
 Route::get('/delete_penyuluh/{id}',  [PenyuluhController::class, 'delete']);
 
+Route::get('/edit_pengguna',  [PenggunaController::class, 'index']);
+Route::get('/tambah_pengguna',  [PenggunaController::class, 'index2']);
+Route::post('/tambah_pengguna',  [PenggunaController::class, 'create']);
+Route::get('/delete_pengguna/{id}',  [PenggunaController::class, 'delete']);
+Route::get('/export_pengguna',  [PenggunaController::class, 'export']);
+
 Route::get('/edit_utama', function () {
     return view('edit/edit_utama');
 });
 
-Route::get('/pengguna', function () {
-    return view('pengguna');
-});
+
 
 Route::get('/kontrasepsi', [KontrasepsiController::class, 'index']); //ngambil method index dari controller

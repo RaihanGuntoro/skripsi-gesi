@@ -49,19 +49,19 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="nama_admin" class="form-label">Nama Admin</label>
-                                <input type="text" class="form-control" id="nama_admin" name="nama_admin">
+                                <input type="text" class="form-control" id="nama_admin" name="nama_admin" autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <label for="nomor_admin" class="form-label">Nomor Admin</label>
-                                <input type="text" class="form-control" id="nomor_admin" name="nomor_admin">
+                                <input type="text" class="form-control" id="nomor_admin" name="nomor_admin" autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <label for="email_admin" class="form-label">Masukkan Email </label>
-                                <input type="email" class="form-control" id="email_admin" name="email_admin">
+                                <input type="email" class="form-control" id="email_admin" name="email_admin" autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <label for="password_admin" class="form-label">Masukkan Password</label>
-                                <input type="password" class="form-control" id="password_admin" name="password_admin">
+                                <input type="password" class="form-control" id="password_admin" name="password_admin" autocomplete="off">
                             </div>
                             <button type="submit"  class=" btn btn-tambah mt-1">Submit</button>
                         </form>
