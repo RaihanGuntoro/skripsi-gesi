@@ -120,6 +120,20 @@
     
 }
 
+.btn-edit {
+    background-color: rgb(85, 85, 248);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.btn-edit:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
 
 .mt-100{
     margin-top: 100px;
@@ -157,4 +171,19 @@ footer{
 
 .mw-60{
     max-width: 600%;
+}
+
+
+@media (max-width: 1200px) {
+    .card-query {
+        margin-top: 5%;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .justify {
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
 }

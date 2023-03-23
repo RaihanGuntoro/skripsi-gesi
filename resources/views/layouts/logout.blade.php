@@ -16,9 +16,6 @@
         <div class="container-fluid justify-content-between">
 
             <a href="/"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <h3 class="teks-navbar mt-2 me-3">BKKBN Kecamatan Gesi</h3>
             <a href="" class="btn btn-blue2 me-3">
                 <h6> Keluar</h6>

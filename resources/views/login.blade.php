@@ -38,7 +38,7 @@
                 <div class="card me-4  mt-100 br-10 card1">
                     <div class="card-body mx-4 ">
 
-                        <form action="/login" method="POST">
+                        <form action="/login_proses" method="POST">
                             @csrf
                             <legend class=" h3  text-center fw-bold blue">LOGIN FORM</legend>
                             <div class="mb-3">

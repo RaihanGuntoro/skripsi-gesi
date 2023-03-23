@@ -26,6 +26,7 @@
                                     <th scope="col">Umur</th>
                                     <th scope="col">Alat Kontrasepsi</th>
                                     <th scope="col">Action</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -42,6 +43,7 @@
                                     <td>{{ $item -> alamat_pengguna }}</td>
                                     <td> {{ $item -> umur_pengguna }} </td>
                                     <td> {{ $item -> kontrasepsi_pengguna }} </td>
+                                    <td> <a href="/tampilkan_pengguna/{{ $item -> id }}" class="btn btn-edit ">Edit</a> </td>
                                     <td> <a href="/delete_pengguna/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>
                                 </tr>
                                 @endforeach

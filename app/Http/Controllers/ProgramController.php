@@ -32,13 +32,13 @@ class ProgramController extends Controller
     {
         $data = program::find($id);
 
-        return view('edit/update_program', compact('data'));
+        return view('update/update_program', compact('data'));
     }
 
     public function update(Request $request, $id)
     {
         $data = program::find($id);
         $data->update($request->all());
-        return redirect('/edit_program');
+        return redirect('edit_program');
     }
 }

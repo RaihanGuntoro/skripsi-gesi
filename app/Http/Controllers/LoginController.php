@@ -17,19 +17,11 @@ class LoginController extends Controller
 
     public function authenticate(Request $request)
     {
-        $credentials = $request->validate(
-            [
-                'nomor_admin' => ['required'],
-                'password_admin' => ['required']
-            ]
-
-        );
-
-        if (Auth::attempt($credentials)) {
-
-            $request->session()->regenerate();
-            return redirect()->intended('/edit');
+        if (Auth::attempt($request->only('nomor_admin', 'password_admin'))) {
+            return redirect('/edit_utama');
         }
+
+        return redirect('/login');
 
         // if (Auth::attempt($request->only('nomor_admin', 'password_admin'))) {
         //     return redirect('/edit');

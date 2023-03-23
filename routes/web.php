@@ -15,7 +15,7 @@ use App\Http\Controllers\KontrasepsiController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/login',  [LoginController::class, 'index']);
-Route::post('/login',  [LoginController::class, 'authenticate']);
+Route::post('/login_proses',  [LoginController::class, 'authenticate']);
 
 Route::get('/edit_admin',  [AdminController::class, 'index']);
 Route::post('/edit_admin',  [AdminController::class, 'create']);
@@ -40,6 +40,8 @@ Route::get('/tambah_pengguna',  [PenggunaController::class, 'index2']);
 Route::post('/tambah_pengguna',  [PenggunaController::class, 'create']);
 Route::get('/delete_pengguna/{id}',  [PenggunaController::class, 'delete']);
 Route::get('/export_pengguna',  [PenggunaController::class, 'export']);
+Route::get('/tampilkan_pengguna/{id}',  [PenggunaController::class, 'tampilkan']);
+Route::post('/update_pengguna/{id}',  [PenggunaController::class, 'update']);
 
 Route::get('/edit_utama', function () {
     return view('edit/edit_utama');

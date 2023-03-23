@@ -42,4 +42,18 @@ class PenggunaController extends Controller
     {
         return Excel::download(new exportpengguna, 'datapengguna.xlsx');
     }
+
+    public function tampilkan($id)
+    {
+        $data = pengguna::find($id);
+
+        return view('update/update_pengguna', compact('data'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = pengguna::find($id);
+        $data->update($request->all());
+        return redirect('edit_pengguna');
+    }
 }
