@@ -42,10 +42,10 @@
                             @csrf
                             <legend class=" h3  text-center fw-bold blue">LOGIN FORM</legend>
                             <div class="mb-3">
-                                <label for="nomor_admin" class="form-label mt-3 fw-bold">Nomor Handphone :</label>
+                                <label for="email" class="form-label mt-3 fw-bold">Email Anda :</label>
                                 <div class="d-flex">
                                     <i class="fa fa-duotone fa-mobile icon fa-lg"></i>
-                                    <input type="text" name="nomor_admin" class="form-control" id="nomor_admin" placeholder="Masukkan Nomor HP Anda"  autofocus required> 
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Masukkan Email Anda"  autofocus required> 
                                 </div> 
 
                             </div>

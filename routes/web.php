@@ -14,11 +14,9 @@ use App\Http\Controllers\KontrasepsiController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/login',  [LoginController::class, 'index']);
-Route::post('/login_proses',  [LoginController::class, 'authenticate']);
+
 
 Route::get('/edit_admin',  [AdminController::class, 'index']);
-Route::post('/edit_admin',  [AdminController::class, 'create']);
 Route::get('/delete_admin/{id}',  [AdminController::class, 'delete']);
 
 Route::get('/edit_kontrasepsi',  [KontrasepsiController::class, 'index2']);
@@ -50,3 +48,8 @@ Route::get('/edit_utama', function () {
 
 
 Route::get('/kontrasepsi', [KontrasepsiController::class, 'index']); //ngambil method index dari controller
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
