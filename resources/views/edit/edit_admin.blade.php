@@ -26,7 +26,7 @@
                                 @foreach ($users as $admin)
                                 <tr>
                                     <th scope="row"> {{ $nomor++ }} </th>
-                                    <td> {{ $admin['nama'] }} </td>
+                                    <td> {{ $admin['name'] }} </td>
                                     <td>{{ $admin['email'] }}</td>
                                     <td> {{ $admin['nomor'] }} </td>
                                     <td> <a href="/delete_admin/{{ $admin -> id }}" class="btn btn-danger br-10">Delete</a> </td>
@@ -48,12 +48,8 @@
                         <form class="mt-3" method="post" action="/edit_admin">
                             @csrf
                             <div class="mb-3">
-                                <label for="nama" class="form-label">Nama Admin</label>
-                                <input type="text" class="form-control" id="nama" name="nama" autocomplete="off">
-                            </div>
-                            <div class="mb-3">
-                                <label for="nomor" class="form-label">Nomor Admin</label>
-                                <input type="text" class="form-control" id="nomor" name="nomor" autocomplete="off">
+                                <label for="name" class="form-label">Nama Admin</label>
+                                <input type="text" class="form-control" id="name" name="name" autocomplete="off">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Masukkan Email </label>

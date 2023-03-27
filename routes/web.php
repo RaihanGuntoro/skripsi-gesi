@@ -17,6 +17,7 @@ Route::get('/', [HomeController::class, 'index']);
 
 
 Route::get('/edit_admin',  [AdminController::class, 'index']);
+Route::post('/edit_admin',  [AdminController::class, 'create']);
 Route::get('/delete_admin/{id}',  [AdminController::class, 'delete']);
 
 Route::get('/edit_kontrasepsi',  [KontrasepsiController::class, 'index2']);
