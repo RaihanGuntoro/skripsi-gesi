@@ -30,6 +30,7 @@
     border: 3px solid #38ABF2;
     padding: 20px 20px 20px;
     width: 500px;
+    
 }
 
 .card-program {
@@ -179,11 +180,35 @@ footer{
         margin-top: 5%;
         align-items: center;
     }
+
+    .card-penyuluhm {
+        margin: auto;
+    }
+
+    .tengah {
+        margin: auto;
+    }
+
+    .martop-5 {
+        margin-top: 5%;
+    }
 }
 
 @media (min-width: 1200px) {
     .justify {
         justify-content: space-between;
         flex-direction: column-reverse;
+    }
+
+    .mw-10p {
+        max-width: 10%;
+        width: 20rem;
+        
+    }
+
+
+
+    .marleft-5 {
+        margin-left: 5%;
     }
 }
