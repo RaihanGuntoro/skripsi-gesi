@@ -3,7 +3,7 @@
 
 <section>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
             <div class="container">
                 <div class="card mt-5 br-15 ">
                     <div class="card-body ">
@@ -30,7 +30,6 @@
                                     <th scope="row"> {{ $nomor++ }} </th>
                                     <td> {{ $item -> nama_program }} </td>
                                     <td>{{ $item -> lokasi_program }}</td>
-                                    <td> {{ $item -> tanggal_program }} </td>
                                     <td> {{ $item -> pelaksanaan_program }} </td>
                                     <td> <a href="/tampilkan_program/{{ $item -> id }}" class="btn btn-edit ">Edit</a> </td>
                                     <td> <a href="/delete_program/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>
@@ -45,8 +44,8 @@
             </div>
 
         </div>
-        <div class="col-md-4">
-            <div class="card mt-5 br-15 me-3 ">
+        <div class="col-md-5">
+            <div class="card mt-5 br-15 me-2 mlmr-10">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Tambah Program</h3>
                     <form class="mt-3" method="post" action="/edit_program">
@@ -73,7 +72,7 @@
                             </select>
                         </div>
 
-                        <button type="submit" class=" btn btn-tambah mt-1">Submit</button>
+                        <button type="submit" class=" btn btn-tambah mt-1">Tambah</button>
                     </form>
                 </div>
             </div>

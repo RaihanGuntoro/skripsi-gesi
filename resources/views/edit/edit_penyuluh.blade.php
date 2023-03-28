@@ -61,7 +61,7 @@
                                 <input type="text" class="form-control" id="alamat_penyuluh" name="alamat_penyuluh" autocomplete="off">
                             </div>
 
-                            <button type="submit"  class=" btn btn-tambah mt-1">Submit</button>
+                            <button type="submit"  class=" btn btn-tambah mt-1">Tambah</button>
                         </form>
                     </div>
                 </div>

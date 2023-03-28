@@ -175,6 +175,8 @@ footer{
 }
 
 
+
+
 @media (max-width: 1200px) {
     .card-query {
         margin-top: 5%;
@@ -192,6 +194,11 @@ footer{
     .martop-5 {
         margin-top: 5%;
     }
+
+    .mlmr-10 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -206,7 +213,9 @@ footer{
         
     }
 
-
+    .martop-10 {
+        margin-top: 10%;
+    }
 
     .marleft-5 {
         margin-left: 5%;

@@ -31,7 +31,7 @@
                                     <th scope="row"> {{ $nomor++ }} </th>
                                     <td> {{ $item -> nama_kontrasepsi }} </td>
                                     <td>
-                                        <img src=" {{ asset('gambarkontrasepsi/'. $item->gambar_kontrasepsi)}}" style="width: 100px" alt="">
+                                        <img src=" {{ asset('gambarkontrasepsi/'. $item->gambar_kontrasepsi)}}" style="width: 50px" alt="">
                                     </td>
                                     <td>{{ $item -> kode_kontrasepsi }}</td>
                                     <td> {{ $item -> jumlah_kontrasepsi }} </td>
@@ -73,7 +73,7 @@
                             <label for="deskripsi_kontrasepsi" class="form-label">Deskripsi Kontrasepsi</label>
                             <input type="text" class="form-control" id="deskripsi_kontrasepsi" name="deskripsi_kontrasepsi" autocomplete="off">
                         </div>
-                        <button type="submit"  class=" btn btn-tambah mt-1">Submit</button>
+                        <button type="submit"  class=" btn btn-tambah mt-1">Tambah</button>
                     </form>
                 </div>
             </div>

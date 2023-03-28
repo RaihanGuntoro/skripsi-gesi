@@ -14,7 +14,7 @@
 
                 <div class="row d-flex ms-2 me-2 mt-2 mb-3 justify-content-between">
 
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 20rem;">
+                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 23rem;">
                         <center>
                             <img src="img/icon/kondom.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -24,7 +24,7 @@
                         </div>
                     </div>
 
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 20rem;">
+                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 23rem;">
                         <center>
                             <img src="img/icon/iud.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 20rem;">
+                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 23rem;">
                         <center>
                             <img src="img/icon/pills.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="tengah col-md-3">
-                        <div class="mt-3">
+                        <div class="mt-4">
                             <a href="/kontrasepsi" class="fw-bold h4" style="text-decoration: none;"> Lihat Selengkapnya </a>
                         </div>
                     </div>
@@ -58,9 +58,9 @@
 
 <section>
     <div class="card br-15 p-15 " style="border: 3px solid #38ABF2; margin-left: 50px; margin-right: 50px">
-        <h3 class=" fw-bold mt-2 mb-4 ms-2">Program BKKBN</h3>
+        <h3 class=" fw-bold mt-2 mb-3 ms-2">Program BKKBN</h3>
         @foreach ($programs as $coba)
-        <div class="card br-10 card-program  ms-3 me-3">
+        <div class="card br-10 card-program mt-3  ms-3 me-3">
 
             <h4> {{ $coba -> nama_program }} </h4>
             <h6> {{ $coba -> tanggal_program }} </h6>
@@ -73,11 +73,11 @@
 </section>
 
 <section>
-    <div class="row">
+    <div class="row mt-3">
         <div class="col-md-6">
             <div class="container">
                 <center>
-                    <div class="card card-motivasi text-center martop-5" style="max-width: 400px;">
+                    <div class="card card-motivasi text-center martop-10 martop-5" style="max-width: 400px;">
                         <h5 class="text-center mt-3">Ingatlah, saat semuanya runtuh dan gagal, keluarga adalah tempatmu kembali. Rencanakanlah dengan tepat, konsultasikanlah sebelum terlambat.</h5>
                         <h4 class="fw-bold text-center">BKKBN Kecamatan Gesi</h4>
                     </div>
@@ -86,7 +86,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 mt-3">
             <div class="card card-penyuluh mt-2 marleft-5 br-15 card-penyuluhm">
                 <h3 class="poppins ">Contact Penyuluh</h3>
                 <table class="table">
