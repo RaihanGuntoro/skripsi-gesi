@@ -14,7 +14,10 @@ use App\Http\Controllers\KontrasepsiController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/edit_utama', function () {
+        return view('edit/edit_utama');
+    });
 
 Route::get('/edit_admin',  [AdminController::class, 'index']);
 Route::post('/edit_admin',  [AdminController::class, 'create']);
@@ -41,16 +44,10 @@ Route::get('/delete_pengguna/{id}',  [PenggunaController::class, 'delete']);
 Route::get('/export_pengguna',  [PenggunaController::class, 'export']);
 Route::get('/tampilkan_pengguna/{id}',  [PenggunaController::class, 'tampilkan']);
 Route::post('/update_pengguna/{id}',  [PenggunaController::class, 'update']);
-
-Route::get('/edit_utama', function () {
-    return view('edit/edit_utama');
 });
 
 
 
 Route::get('/kontrasepsi', [KontrasepsiController::class, 'index']); //ngambil method index dari controller
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
