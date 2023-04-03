@@ -3,8 +3,7 @@
 
 <section>
     <div class="row">
-
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="container">
                 <div class="card mt-5 br-15  card-admin">
                     <div class="card-body ">
