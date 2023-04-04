@@ -29,7 +29,7 @@
                             <label for="kontrasepsi_pengguna" class="form-label">Kontrasepsi Pengguna</label>
                             <input type="text" class="form-control" id="kontrasepsi_pengguna" name="kontrasepsi_pengguna" autocomplete="off">
                         </div>
-                        <button type="submit"  class=" btn btn-tambah mt-1">Submit</button>
+                        <button type="submit"  class=" btn btn-tambah mt-1">Tambah</button>
                     </form>
                 </div>
             </div>

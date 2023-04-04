@@ -40,7 +40,7 @@ class PenggunaController extends Controller
 
     public function export()
     {
-        return Excel::download(new exportpengguna, 'datapengguna.xlsx');
+        return Excel::download(new exportpengguna, 'DataPenggunaKBGesi.xlsx');
     }
 
     public function tampilkan($id)
