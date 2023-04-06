@@ -10,7 +10,8 @@
                         <div class="d-flex justify-content-between">
                             <h3 class="poppins text-center ms-3">Daftar Pengguna</h3>
                             <div>
-                                <a href="/tambah_pengguna" class="btn btn-tambah br-10 ">Tambah +</a>
+                                <a href="/tambah_pengguna" class="btn btn-tambah br-10 me-2">Tambah +</a>
+                                <a href="/edit_total" class="btn btn-tambah br-10 me-2">Total</a>
                                 <a href="/export_pengguna" class="btn btn-success br-10 me-5">Export Excel</a>
                             </div>
 

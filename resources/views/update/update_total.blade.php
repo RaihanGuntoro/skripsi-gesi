@@ -20,10 +20,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <h3 class="teks-navbar mt-2 me-3">BKKBN Kecamatan Gesi</h3>
-            <a class="btn btn-blue2 me-3" href="{{ route('logout') }}"
-                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                Keluar
-                            </a>
+            <a class="btn btn-blue2 me-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                Keluar
+            </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>
@@ -35,21 +34,13 @@
         <div class="container">
             <div class="card mt-5 br-15  ">
                 <div class="card-body ">
-                    <h3 class="poppins text-center">Update Pengguna</h3>
-                    <form class="mt-3" method="post" action="/update_pengguna/{{$data->id}}">
+                    <h3 class="poppins text-center">Update Total Akseptor</h3>
+                    <form class="mt-3" method="post" action="/update_total/{{$data->id}}">
                         @csrf
                         <div class="mb-3">
-                            <label for="nama_pengguna" class="form-label">Nama Pengguna</label>
-                            <input value="{{$data->nama_pengguna}}" type="text" class="form-control" id="nama_pengguna" name="nama_pengguna" autocomplete="off">
-                        </div>
-                        <div class="mb-3">
-                            <label for="nomor_pengguna" class="form-label">Nomor Pengguna</label>
-                            <input value=" {{$data->nomor_pengguna}}" type="text" class="form-control" id="nomor_pengguna" name="nomor_pengguna" autocomplete="off">
-                        </div>
-                        <div class="mb-3">
-                            <label for="alamat_pengguna" class="form-label">Alamat Pengguna</label>
-                            <select class="form-select" id="alamat_pengguna" name="alamat_pengguna" aria-label="Default select example">
-                                <option selected>{{$data->alamat_pengguna}}</option>
+                            <label for="desa" class="form-label">Nama Desa</label>
+                            <select class="form-select" id="desa" name="desa" aria-label="Default select example">
+                                <option selected>{{$data->desa}}</option>
                                 <option value="Gesi">Gesi</option>
                                 <option value="Blangu">Blangu</option>
                                 <option value="Pilangsari">Pilangsari</option>
@@ -60,15 +51,9 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="umur_pengguna" class="form-label">Umur Pengguna</label>
-                            <input value="{{$data->umur_pengguna}}" type="text" class="form-control" id="umur_pengguna" name="umur_pengguna" autocomplete="off">
+                            <label for="total_pengguna" class="form-label">Total Akseptor</label>
+                            <input value=" {{$data->total_pengguna}}" type="text" class="form-control" id="total_pengguna" name="total_pengguna" autocomplete="off">
                         </div>
-                        <div class="mb-3">
-                            <label for="kontrasepsi_pengguna" class="form-label">kontrasepsi Pengguna</label>
-                            <input value="{{$data->kontrasepsi_pengguna}}" type="text" class="form-control" id="kontrasepsi_pengguna" name="kontrasepsi_pengguna" autocomplete="off">
-                        </div>
-
-
                         <button type="submit" class=" btn btn-tambah mt-1">Perbarui</button>
                     </form>
                 </div>

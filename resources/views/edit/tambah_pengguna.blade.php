@@ -19,7 +19,16 @@
                         </div>
                         <div class="mb-3">
                             <label for="alamat_pengguna" class="form-label">Alamat Pengguna</label>
-                            <input type="text" class="form-control" id="alamat_pengguna" name="alamat_pengguna" autocomplete="off">
+                            <select class="form-select" id="alamat_pengguna" name="alamat_pengguna" aria-label="Default select example">
+                                <option selected>Pilih Desa</option>
+                                <option value="Gesi">Gesi</option>
+                                <option value="Blangu">Blangu</option>
+                                <option value="Pilangsari">Pilangsari</option>
+                                <option value="Poleng">Poleng</option>
+                                <option value="Slendro">Slendro</option>
+                                <option value="Srawung">Srawung</option>
+                                <option value="Tanggan">Tanggan</option>
+                            </select>
                         </div>
                         <div class="mb-3">
                             <label for="umur_pengguna" class="form-label">Umur Pengguna</label>
@@ -29,7 +38,7 @@
                             <label for="kontrasepsi_pengguna" class="form-label">Kontrasepsi Pengguna</label>
                             <input type="text" class="form-control" id="kontrasepsi_pengguna" name="kontrasepsi_pengguna" autocomplete="off">
                         </div>
-                        <button type="submit"  class=" btn btn-tambah mt-1">Tambah</button>
+                        <button type="submit" class=" btn btn-tambah mt-1">Tambah</button>
                     </form>
                 </div>
             </div>

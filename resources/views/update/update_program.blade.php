@@ -20,9 +20,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <h3 class="teks-navbar mt-2 me-3">BKKBN Kecamatan Gesi</h3>
-            <a href="" class="btn btn-blue2 me-3">
-                <h6> Keluar</h6>
-            </a>
+            <a class="btn btn-blue2 me-3" href="{{ route('logout') }}"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                Keluar
+                            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
         </div>
     </nav>
 

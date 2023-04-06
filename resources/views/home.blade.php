@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('home')
 <section>
-    <div style="background-image: url(img/bg1.png)" class="mb-5">
+    <div style="background-image: url(img/bg1.png)" class="mb-4">
         <div class="">
             <br>
             <h1 class="text-center white poppins">Selamat Datang di Website BKKBN </h1>
@@ -14,7 +14,7 @@
 
                 <div class="row d-flex ms-2 me-2 mt-2 mb-3 justify-content-between">
 
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 23rem;">
+                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 21rem;">
                         <center>
                             <img src="img/icon/kondom.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -24,7 +24,7 @@
                         </div>
                     </div>
 
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 23rem;">
+                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 21rem;">
                         <center>
                             <img src="img/icon/iud.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 23rem;">
+                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 21rem;">
                         <center>
                             <img src="img/icon/pills.png" width="100px" class="mt-3" alt="...">
                         </center>
@@ -57,8 +57,8 @@
 </section>
 
 <section>
-    <div class="card br-15 p-15 " style="border: 3px solid #38ABF2; margin-left: 50px; margin-right: 50px">
-        <h3 class=" fw-bold mt-2 mb-3 ms-2">Program BKKBN</h3>
+    <div class="card br-15 p-15 " style="border: 2px solid black; margin-left: 50px; margin-right: 50px">
+        <h3 class=" fw-bold mb-3 ms-2">Program BKKBN</h3>
         @foreach ($programs as $coba)
         <div class="card br-10 card-program mt-3  ms-3 me-3">
 
@@ -72,22 +72,16 @@
     </div>
 </section>
 
-<section>
-    <div class="row mt-3">
-        <div class="col-md-6">
-            <div class="container">
-                <center>
-                    <div class="card card-motivasi text-center martop-10 martop-5" style="max-width: 400px;">
-                        <h5 class="text-center mt-3">Ingatlah, saat semuanya runtuh dan gagal, keluarga adalah tempatmu kembali. Rencanakanlah dengan tepat, konsultasikanlah sebelum terlambat.</h5>
-                        <h4 class="fw-bold text-center">BKKBN Kecamatan Gesi</h4>
-                    </div>
-                </center>
+<section class="container">
+    <div class="row mt-3 ">
+        <div class="col-md-7 tengah mt-3">
+            <div class=" br-15 chartKB" id="ChartKBGesi" >
 
             </div>
         </div>
 
-        <div class="col-md-6 mt-3">
-            <div class="card card-penyuluh mt-2 marleft-5 br-15 card-penyuluhm">
+        <div class="col-md-5 tengah mt-3">
+            <div class="card card-penyuluh  marleft-5 br-15">
                 <h3 class="poppins ">Contact Penyuluh</h3>
                 <table class="table">
                     <thead>
