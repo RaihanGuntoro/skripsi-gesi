@@ -3,7 +3,7 @@
 
 <section>
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7" data-aos="fade-left" data-aos-duration="700">
             <div class="container">
                 <div class="card mt-5 br-15 ">
                     <div class="card-body ">
@@ -14,7 +14,6 @@
                                     <th scope="col">No</th>
                                     <th scope="col">Nama</th>
                                     <th scope="col">Lokasi</th>
-                                    <th scope="col">Tanggal</th>
                                     <th scope="col">Pelaksanaan</th>
                                     <th scope="col">Action</th>
                                     <th scope="col"></th>
@@ -44,7 +43,7 @@
             </div>
 
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-up" data-aos-duration="1000">
             <div class="card mt-5 br-15 me-2 mlmr-10">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Tambah Program</h3>

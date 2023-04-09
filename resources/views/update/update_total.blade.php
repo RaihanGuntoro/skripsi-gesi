@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- KOREWA BOKU NO CSS DA -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Update Pengguna</title>
 </head>
@@ -31,7 +35,7 @@
 
     <div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-down-right" data-aos-duration="1000">
             <div class="card mt-5 br-15  ">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Update Total Akseptor</h3>
@@ -60,6 +64,11 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

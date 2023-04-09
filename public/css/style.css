@@ -27,8 +27,10 @@
 
 .card-penyuluh {
     /* background-color:  #38ABF2; */
-    border: 3px solid #38ABF2;
+    border: 1.5px solid black;
     padding: 20px 20px 20px;
+    /* background-color: #38ABF2; */
+
     
 }
 

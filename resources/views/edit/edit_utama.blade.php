@@ -1,13 +1,13 @@
 @extends('layouts.logout')
 @section('keluar')
 
-<section>
+<section >
     <div class="container">
         <h3 class="poppins text-center mt-4 mb-3 fw-bold" style="color: white;">HALAMAN EDIT</h3>
         <div class="row">
             <div class="col-md-12">
 
-                <div class="row d-flex mt-3 justify-content-evenly ">
+                <div class="row d-flex mt-3 justify-content-evenly" data-aos="fade-left" data-aos-duration="1000">
 
                     <div class="card card-edit  poppins col-sm-4" style="width: 17rem; height: 14rem">
                         <a href="/edit_admin" class="td-none">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex row mt-4 justify-content-evenly">
+                <div class="d-flex row mt-4 justify-content-evenly" data-aos="fade-right" data-aos-duration="1000">
 
                     <div class="card card-edit poppins" style="width: 17rem; height: 14rem">
                         <a href="/edit_penyuluh" class="td-none">

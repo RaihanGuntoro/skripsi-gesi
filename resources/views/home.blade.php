@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('home')
-<section>
+<section >
     <div style="background-image: url(img/bg1.png)" class="mb-4">
         <div class="">
             <br>
@@ -9,7 +9,7 @@
 
             <br>
 
-            <div class="card br-15 p-15" style="box-shadow: 0px 3px 0px gray; margin-left: 50px; margin-right: 50px">
+            <div class="card br-15 p-15" data-aos="fade-up" data-aos-duration="1000" style="box-shadow: 0px 3px 0px gray; margin-left: 50px; margin-right: 50px">
                 <h3 class=" fw-bold mt-2 ms-2">Alat-alat Kontrasepsi</h3>
 
                 <div class="row d-flex ms-2 me-2 mt-2 mb-3 justify-content-between">
@@ -56,7 +56,7 @@
     </div>
 </section>
 
-<section>
+<section data-aos="fade-up" data-aos-duration="1000">
     <div class="card br-15 p-15 " style="border: 2px solid black; margin-left: 50px; margin-right: 50px">
         <h3 class=" fw-bold mb-3 ms-2">Program BKKBN</h3>
         @foreach ($programs as $coba)
@@ -74,14 +74,14 @@
 
 <section class="container">
     <div class="row mt-3 ">
-        <div class="col-md-7 tengah mt-3">
+        <div class="col-md-7 tengah mt-3" data-aos="fade-up-right" data-aos-duration="1000">
             <div class=" br-15 chartKB" id="ChartKBGesi" >
 
             </div>
         </div>
 
-        <div class="col-md-5 tengah mt-3">
-            <div class="card card-penyuluh  marleft-5 br-15">
+        <div class="col-md-5 tengah mt-3" data-aos="fade-up-left" data-aos-duration="1000">
+            <div class="card card-penyuluh  marleft-5 br-15 ">
                 <h3 class="poppins ">Contact Penyuluh</h3>
                 <table class="table">
                     <thead>
@@ -111,4 +111,53 @@
         </div>
     </div>
 </section>
+@endsection
+
+@section('chart')
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript">
+    var desa = <?php echo json_encode($desa) ?>;
+    var total_pengguna = <?php echo json_encode($total_pengguna) ?>;
+
+    Highcharts.chart('ChartKBGesi', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Grafik Akseptor KB Tiap Desa'
+        },
+        subtitle: {
+            text: 'Tahun 2023'
+        },
+        xAxis: {
+            categories: desa,
+            crosshair: true
+        },
+        yAxis: {
+
+            title: {
+                text: 'Jumlah Akseptor'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:30px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} Orang</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Akseptor',
+            data: total_pengguna
+
+        }, ]
+    });
+</script>
 @endsection

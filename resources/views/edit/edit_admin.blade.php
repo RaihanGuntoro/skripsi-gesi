@@ -3,7 +3,7 @@
 
 <section>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12"  data-aos="zoom-in" data-aos-duration="1000">
             <div class="card mt-5 br-15  card-admin">
                 <div class="card-body ">
                     <div class="container d-flex justify-content-between">

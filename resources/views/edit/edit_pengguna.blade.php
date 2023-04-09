@@ -4,7 +4,7 @@
 <section>
     <div class="row">
         <center>
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="card mt-5 br-15  card-admin mw-60">
                     <div class="card-body ">
                         <div class="d-flex justify-content-between">

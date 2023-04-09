@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- KOREWA BOKU NO CSS DA -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BKKBN Kec Gesi</title>
 </head>
 
-<body style="background-image: url(img/bg-login.png)">
+<body style="background-image: url(img/bg-login.png)" >
 
     <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow-sm br-5">
         <div class="container-fluid">
@@ -34,7 +38,7 @@
                 </div> -->
 
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="fade-left" data-aos-duration="900">
                 <div class="card me-4  mt-100 br-10 card1">
                     <div class="card-body mx-4 ">
 
@@ -65,7 +69,10 @@
         </div>
     </div>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

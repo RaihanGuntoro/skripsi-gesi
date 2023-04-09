@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP 5 -->
+   <!-- BOOTSTRAP 5 -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -35,32 +35,27 @@
     </nav>
 
     <div>
-    <div class="container"  data-aos="fade-down-right" data-aos-duration="1000">
+    <div class="container" data-aos="fade-down-right" data-aos-duration="1000">
             <div class="card mt-5 br-15  ">
                 <div class="card-body ">
-                    <h3 class="poppins text-center">Update Program</h3>
-                    <form class="mt-3" method="post" action="/update_program/{{$data->id}}">
+                    <h3 class="poppins text-center">Update Kontrasepsi</h3>
+                    <form class="mt-3" method="post" action="/update_kontrasepsi/{{$data->id}}">
                         @csrf
                         <div class="mb-3">
-                            <label for="nama_program" class="form-label">Nama Program</label>
-                            <input value="{{$data->nama_program}}" type="text" class="form-control" id="nama_program" name="nama_program" autocomplete="off">
+                            <label for="nama_kontrasepsi" class="form-label">Nama Kontrasepsi</label>
+                            <input value="{{$data->nama_kontrasepsi}}" type="text" class="form-control" id="nama_kontrasepsi" name="nama_kontrasepsi" autocomplete="off">
                         </div>
                         <div class="mb-3">
-                            <label for="tanggal_program" class="form-label">Tanggal Program</label>
-                            <input value="{{$data->tanggal_program}}" type="date" class="form-control" id="tanggal_program" name="tanggal_program" autocomplete="off">
+                            <label for="kode_kontrasepsi" class="form-label">Kode Kontrasepsi</label>
+                            <input value="{{$data->kode_kontrasepsi}}" type="text" class="form-control" id="kode_kontrasepsi" name="kode_kontrasepsi" autocomplete="off">
                         </div>
                         <div class="mb-3">
-                            <label for="lokasi_program" class="form-label">Lokasi Program</label>
-                            <input value=" {{$data->lokasi_program}}" type="text" class="form-control" id="lokasi_program" name="lokasi_program" autocomplete="off">
+                            <label for="jumlah_kontrasepsi" class="form-label">Jumlah Kontrasepsi</label>
+                            <input value="{{$data->jumlah_kontrasepsi}}" type="text" class="form-control" id="jumlah_kontrasepsi" name="jumlah_kontrasepsi" autocomplete="off">
                         </div>
-
                         <div class="mb-3">
-                            <label for="pelaksanaan_program" class="form-label">Pelaksanaan Program</label>
-                            <select class="form-select" name="pelaksanaan_program" aria-label="Default select example">
-                                <option selected>{{$data->pelaksanaan_program}}</option>
-                                <option value="Terlaksana">Sudah Terlaksana</option>
-                                <option value="Proses">Dalam Proses</option>
-                            </select>
+                            <label for="deskripsi_kontrasepsi" class="form-label">Deskripsi Kontrasepsi</label>
+                            <input value="{{$data->deskripsi_kontrasepsi}}" type="text" class="form-control" id="deskripsi_kontrasepsi" name="deskripsi_kontrasepsi" autocomplete="off">
                         </div>
 
                         <button type="submit" class=" btn btn-tambah mt-1">Perbarui</button>

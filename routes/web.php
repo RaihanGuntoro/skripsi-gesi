@@ -26,6 +26,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/edit_kontrasepsi',  [KontrasepsiController::class, 'index2']);
     Route::post('/edit_kontrasepsi',  [KontrasepsiController::class, 'create']);
     Route::get('/delete_kontrasepsi/{id}',  [KontrasepsiController::class, 'delete']);
+    Route::get('/tampilkan_kontrasepsi/{id}',  [KontrasepsiController::class, 'tampilkan']);
+    Route::post('/update_kontrasepsi/{id}',  [KontrasepsiController::class, 'update']);
 
     Route::get('/edit_program',  [ProgramController::class, 'index']);
     Route::post('/edit_program',  [ProgramController::class, 'create']);

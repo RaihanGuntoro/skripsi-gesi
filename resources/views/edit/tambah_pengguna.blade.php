@@ -3,7 +3,7 @@
 
 <section>
     <div class="row">
-        <div class="container">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
             <div class="card mt-5 br-15  card-admin mw-60 mx-5">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Tambah Pengguna</h3>

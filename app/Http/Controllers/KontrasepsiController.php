@@ -40,4 +40,18 @@ class KontrasepsiController extends Controller
         $data->delete();
         return redirect('/edit_kontrasepsi');
     }
+
+    public function tampilkan($id)
+    {
+        $data = kontrasepsi::find($id);
+
+        return view('update/update_kontrasepsi', compact('data'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = kontrasepsi::find($id);
+        $data->update($request->all());
+        return redirect('edit_kontrasepsi');
+    }
 }

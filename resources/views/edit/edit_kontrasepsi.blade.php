@@ -4,7 +4,7 @@
 <section>
     <div class="row">
         <center>
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="card mt-5 br-15  card-admin mw-60">
                     <div class="card-body ">
                         <h3 class="poppins text-center">Daftar Kontrasepsi</h3>
@@ -14,10 +14,10 @@
                                     <th scope="col">No</th>
                                     <th scope="col">Nama</th>
                                     <th scope="col">Gambar</th>
-                                    <th scope="col">Kode</th>
                                     <th scope="col">Jumlah</th>
                                     <th scope="col">Deskripsi</th>
                                     <th scope="col">Action</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -33,9 +33,9 @@
                                     <td>
                                         <img src=" {{ asset('gambarkontrasepsi/'. $item->gambar_kontrasepsi)}}" style="width: 50px" alt="">
                                     </td>
-                                    <td>{{ $item -> kode_kontrasepsi }}</td>
                                     <td> {{ $item -> jumlah_kontrasepsi }} </td>
                                     <td> {{ $item -> deskripsi_kontrasepsi }} </td>
+                                    <td> <a href="/tampilkan_kontrasepsi/{{ $item -> id }}" class="btn btn-edit ">Edit</a> </td>
                                     <td> <a href="/delete_kontrasepsi/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>
                                 </tr>
                                 @endforeach
@@ -47,7 +47,7 @@
             </div>
         </center>
 
-        <div class="container">
+        <div class="container" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="card mt-5 br-15  card-admin mw-60 mx-5">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Tambah Kontrasepsi</h3>
