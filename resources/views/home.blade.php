@@ -1,57 +1,23 @@
 @extends('layouts.main')
 @section('home')
-<section >
-    <div style="background-image: url(img/bg1.png)" class="mb-4">
-        <div class="">
-            <br>
-            <h1 class="text-center white poppins">Selamat Datang di Website BKKBN </h1>
-            <h1 class="text-center white poppins">Kecamatan Gesi</h1>
-
-            <br>
-
-            <div class="card br-15 p-15" data-aos="fade-up" data-aos-duration="1000" style="box-shadow: 0px 3px 0px gray; margin-left: 50px; margin-right: 50px">
-                <h3 class=" fw-bold mt-2 ms-2">Alat-alat Kontrasepsi</h3>
-
-                <div class="row d-flex ms-2 me-2 mt-2 mb-3 justify-content-between">
-
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 21rem;">
-                        <center>
-                            <img src="img/icon/kondom.png" width="100px" class="mt-3" alt="...">
-                        </center>
-                        <div class="card-body">
-                            <h5 class="card-title">KONDOM</h5>
-                            <h6 class="card-text lh-base poppins">Kondom merupakan salah satu alat kontrasepsi yang terbuat dari bahan sejenis karet yang dipasang pada alat kelamin sebagai pelindung saat berhubungan seksual.</h6>
-                        </div>
-                    </div>
-
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 21rem;">
-                        <center>
-                            <img src="img/icon/iud.png" width="100px" class="mt-3" alt="...">
-                        </center>
-                        <div class="card-body">
-                            <h5 class="card-title">IUD</h5>
-                            <h6 class="card-text lh-base poppins">IUD adalah sebuah alat kontrasepsi berbahan plastik yang memiliki bentuk seperti huruf ‘T’ dan dipasang di dalam rahim untuk mencegah kehamilan.</h6>
-                        </div>
-                    </div>
-
-                    <div class="card tengah card-kontrasepsi col-md-3 martop-5 " style="width: 21rem;">
-                        <center>
-                            <img src="img/icon/pills.png" width="100px" class="mt-3" alt="...">
-                        </center>
-                        <div class="card-body">
-                            <h5 class="card-title">PIL</h5>
-                            <h6 class="card-text lh-base poppins">PIL KB adalah sebuah jenis pengendalian kelahiran yang dirancang untuk dipakai dengan cara ditelan lewat mulut oleh wanita.</h6>
-                        </div>
-                    </div>
-
-                    <div class="tengah col-md-3">
-                        <div class="mt-4">
-                            <a href="/kontrasepsi" class="fw-bold h4" style="text-decoration: none;"> Lihat Selengkapnya </a>
-                        </div>
-                    </div>
+<section>
+    <div style="background-image: url(img/bg1.png);" class="mb-4">
+        <div class="row">
+            <div class="col-md-7" data-aos="fade-right" data-aos-duration="1000">
+                <div class="mt-5 p-4">
+                    <h1 class="text-center w-100 fw-bold">Selamat Datang di Website BKKBN Kecamatan Gesi</h1>
+                    <h4 class="text-center w-100 mt-4  poppins">Masih bingung tentang alat kontrasepsi ? Yuk belajar !</h4>
+                    <a href="/kontrasepsi" class="btn btn-success mt-3 br-15 h5" style="margin-left: 50px;">Lihat Selengkapnya</a>
                 </div>
             </div>
-            <br>
+            <div class="col-md-5 mt-4 mb-4" data-aos="flip-up" data-aos-duration="1000">
+                <div class="card card-gambara tengah" style="width: 18rem; ">
+                    <img style="border-radius:20px" src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2021/08/25/2227413478.jpg" alt="">
+                </div>
+                <div class="card card-gambarb tengah" style="width: 18rem;">
+                    <img style="border-radius:20px" src="https://hamilplus.com/wp-content/uploads/2018/08/efek-samping-pil-Kb-andalan.jpg" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -75,7 +41,7 @@
 <section class="container">
     <div class="row mt-3 ">
         <div class="col-md-7 tengah mt-3" data-aos="fade-up-right" data-aos-duration="1000">
-            <div class=" br-15 chartKB" id="ChartKBGesi" >
+            <div class=" br-15 chartKB" id="ChartKBGesi">
 
             </div>
         </div>

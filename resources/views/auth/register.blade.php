@@ -4,7 +4,7 @@
 <section>
     <div class="row">
         <div class="col-md-12">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card mt-5 br-15  card-admin">
                     <div class="card-body ">
                         <h3 class="poppins text-center">Tambah Admin</h3>

@@ -3,7 +3,7 @@
 
 <section>
     <div class="row">
-        <div class="col-md-7" data-aos="fade-left" data-aos-duration="700">
+        <div class="col-md-7" data-aos="fade-left" data-aos-duration="900">
             <div class="container">
                 <div class="card mt-5 br-15 ">
                     <div class="card-body ">

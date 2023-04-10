@@ -18,12 +18,9 @@
 <body style="background-image: url(img/bg-login.png)" >
 
     <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow-sm br-5">
-        <div class="container-fluid">
+        <div class="container-fluid justify-content-between">
             <img src="img/bkkbn.png" alt="" width="120px" class="ms-3 me-4 mt-0">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <h3 class="teks-navbar mt-2 ms-midle">BKKBN Kecamatan Gesi</h3>
+            <h3 class="teks-navbar mt-2 ">BKKBN Kecamatan Gesi</h3>
         </div>
     </nav>
 

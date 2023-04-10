@@ -20,14 +20,15 @@
         <div class="container-fluid justify-content-between">
 
             <a href="/"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
-            <h3 class="teks-navbar mt-2 me-3">BKKBN Kecamatan Gesi</h3>
-            <a class="btn btn-blue2 me-3" href="{{ route('logout') }}"
-                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                Keluar
-                            </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
+            <div class="d-flex">
+                <h3 class="teks-navbar mt-2 me-5">BKKBN Kecamatan Gesi</h3>
+                <a class="btn btn-blue2 mt-2  me-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    Keluar
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </div>
         </div>
     </nav>
 
@@ -35,7 +36,7 @@
         @yield('keluar')
     </div>
 
-    
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

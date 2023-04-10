@@ -11,6 +11,10 @@
     color: white;
 }
 
+.black {
+    color: black;
+}
+
 .p-15{
     padding: 15px 15px 15px;
 }
@@ -27,16 +31,16 @@
 
 .card-penyuluh {
     /* background-color:  #38ABF2; */
-    border: 1.5px solid black;
+    border: 2px solid black;
     padding: 20px 20px 20px;
     /* background-color: #38ABF2; */
-
-    
 }
+
+
 
 .chartKB {
     /* background-color:  #38ABF2; */
-    border: 3px solid #38ABF2;
+    border: 2px solid black;
     padding: 20px 20px 20px;
     height: 400px;
     
@@ -208,6 +212,16 @@ footer{
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    .card-gambara{
+        border-radius: 20px;
+        border: none;
+    }
+    .card-gambarb{
+        border-radius: 20px;
+        border: none;
+        margin-top: 10px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -229,4 +243,17 @@ footer{
     .marleft-5 {
         margin-left: 5%;
     }
+
+    .card-gambara{
+        border-radius: 20px;
+        position: absolute;
+        border: none;
+        margin-left: 30%;
+    }
+    .card-gambarb{
+        border-radius: 20px;
+        border: none;
+        margin-top: 15%;
+    }
+
 }
