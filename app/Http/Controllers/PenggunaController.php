@@ -15,7 +15,7 @@ class PenggunaController extends Controller
     {
         return view('edit/edit_pengguna', [
             "title" => "Edit Pengguna",
-            "pengguna" => pengguna::all()   //pengguna mengambil dari model
+            "pengguna" => pengguna::paginate(5)   //pengguna mengambil dari model
         ]);
     }
 

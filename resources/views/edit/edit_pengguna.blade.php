@@ -4,8 +4,8 @@
 <section>
     <div class="row">
         <center>
-            <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="card mt-5 br-15  card-admin mw-60">
+            <div class="container" data-aos="flip-up" data-aos-duration="600">
+                <div class="card mt-3 br-15  card-admin mw-60">
                     <div class="card-body ">
                         <div class="d-flex justify-content-between">
                             <h3 class="poppins text-center ms-3">Daftar Pengguna</h3>
@@ -51,6 +51,7 @@
 
                             </tbody>
                         </table>
+                        {{ $pengguna->links() }}
                     </div>
                 </div>
             </div>
