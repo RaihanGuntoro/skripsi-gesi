@@ -15,6 +15,15 @@
                                 <a href="/export_pengguna" class="btn btn-success br-10 me-5">Export Excel</a>
                             </div>
 
+                            <!--FILTER-->
+                            <form method="GET" action="/edit_pengguna">
+                                <div class="d-flex">
+                                    <input type="text" name="filter_key"  class="form-control" placeholder="Masukkan Text" autocomplete="off">
+                                    <button type="submit" class="ms-2 btn btn-tambah mt-1">Cari</button>
+                                </div>
+                            </form>
+                            <!-- END FILTER -->
+
                         </div>
 
                         <table class="table mt-4">
@@ -36,9 +45,9 @@
                                 $nomor = 1;
                                 @endphp
 
-                                @foreach ($pengguna as $item)
+                                @foreach ($pengguna as $index => $item)
                                 <tr>
-                                    <th scope="row"> {{ $nomor++ }} </th>
+                                    <th scope="row"> {{ $index + $pengguna -> firstItem() }} </th>
                                     <td> {{ $item -> nama_pengguna }} </td>
                                     <td> {{ $item -> nomor_pengguna }} </td>
                                     <td>{{ $item -> alamat_pengguna }}</td>

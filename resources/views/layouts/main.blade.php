@@ -37,7 +37,7 @@
 
     <div class="row">
         <div class="col-md-6" data-aos="fade-right" data-aos-duration="700">
-            <div class="mt-5 mb-5" style="margin-left: 20%;">
+            <div class="mt-3 mb-5" style="margin-left: 20%;">
                 <img src="img/bkkbn.png" width="200px" class="mb-3" alt="">
                 <h4 class="mb-3">BKKBN Kecamatan Gesi</h4>
                 <h6>Jl. Gesi Tangen</h6>

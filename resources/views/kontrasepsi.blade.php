@@ -3,10 +3,10 @@
 
 
 <section>
-    <div style="background-image: url(img/bg1.png)" class="mb-2">
-        <div class="p-15">
-            <h3 class=" text-center mb-4"> <br> Alat Kontrasepsi </h3>
-            <div class="card shadow-lg br-15 p-15 ms-5 me-5 mb-3 mt-3" style="border: 2px solid black">
+    <div style="background-image: url(img/bg1.png)" class="">
+        <div class="p-15" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class=" text-center poppins mb-4"> <br> Alat Kontrasepsi </h3>
+            <div class="card shadow-lg br-15 p-15 ms-5 me-5 mb-3 mt-3" style="border: 2px solid black" >
 
                 @foreach ($kontrasepsis as $item)
                 <div class="poppins mt-3 ms-3 border-bottom ">

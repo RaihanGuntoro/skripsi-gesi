@@ -11,12 +11,22 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class PenggunaController extends Controller
 {
-    public function index()    //nama methodnya index
+    public function index(Request $request)    //nama methodnya index
     {
+        $filter = $request->filter_key;
+
+        $pengguna = pengguna::where('nama_pengguna', 'LIKE', '%'.$filter.'%')
+        ->orWhere('nomor_pengguna', 'LIKE', '%'.$filter.'%')
+        ->orWhere('alamat_pengguna', 'LIKE', '%'.$filter.'%')
+        ->orWhere('umur_pengguna', 'LIKE', '%'.$filter.'%')
+        ->orWhere('kontrasepsi_pengguna', 'LIKE', '%'.$filter.'%')
+        ->paginate(5);   //pagination
+
+        $pengguna -> appends($request->all());
+
         return view('edit/edit_pengguna', [
-            "title" => "Edit Pengguna",
-            "pengguna" => pengguna::paginate(5)   //pengguna mengambil dari model
-        ]);
+            "title" => "Edit Pengguna"
+        ], compact('pengguna'));
     }
 
     public function index2()    //nama methodnya index
