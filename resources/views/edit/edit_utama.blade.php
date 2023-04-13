@@ -15,7 +15,7 @@
                                 <img src="img/icon/admin1.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body mb-3">
                                     <h3 class=" card-title fw-bold">ADMIN</h3>
-                                    <h6 class="card-text">Anda dapat menambahkan maupun menghapus admin.</h6>
+                                    <h6 class="card-text">Anda dapat mengolah data alat admin.</h6>
                                 </div>
                             </center>
                         </a>
@@ -27,7 +27,7 @@
                                 <img src="img/icon/kontrasepsi.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">
                                     <h3 class=" card-title fw-bold">KONTRASEPSI</h3>
-                                    <h6 class="card-text">Anda dapat menambahkan maupun menghapus alat kontrasepsi.</h6>
+                                    <h6 class="card-text">Anda dapat mengolah data alat kontrasepsi.</h6>
                                 </div>
                             </center>
                         </a>
@@ -39,7 +39,7 @@
                                 <img src="img/icon/program.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">
                                     <h3 class=" card-title fw-bold">PROGRAM</h3>
-                                    <h6 class="card-text">Anda dapat menambahkan maupun menghapus program.</h6>
+                                    <h6 class="card-text">Anda dapat mengolah data program.</h6>
                                 </div>
                             </center>
                         </a>
@@ -54,7 +54,7 @@
                                 <img src="img/icon/penyuluh.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">
                                     <h3 class=" card-title fw-bold">PLKB</h3>
-                                    <h6 class="card-text">Anda dapat menambahkan maupun menghapus penyuluh KB.</h6>
+                                    <h6 class="card-text">Anda dapat mengolah data penyuluh KB.</h6>
                                 </div>
                             </center>
                         </a>
@@ -66,7 +66,7 @@
                                 <img src="img/icon/pengguna.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">
                                     <h3 class=" card-title fw-bold">PENGGUNA</h3>
-                                    <h6 class="card-text">Anda dapat menambahkan maupun menghapus pengguna KB.</h6>
+                                    <h6 class="card-text">Anda dapat mengolah data pengguna KB.</h6>
                                 </div>
                             </center>
                         </a>

@@ -5,9 +5,9 @@
         <div class="row">
             <div class="col-md-7" data-aos="fade-right" data-aos-duration="1000">
                 <div class="mt-5 p-4">
-                    <h1 class="text-center w-100 fw-bold">Selamat Datang di Website BKKBN Kecamatan Gesi</h1>
-                    <h4 class="text-center w-100 mt-4  poppins">Masih bingung tentang alat kontrasepsi ? Yuk belajar !</h4>
-                    <a href="/kontrasepsi" class="btn btn-success mt-3 br-15 h5" style="margin-left: 50px;">Lihat Selengkapnya</a>
+                    <h1 class="text-center w-100 fw-bold poppins">Selamat Datang di Website BKKBN Kecamatan Gesi</h1>
+                    <h5 class="text-center w-100 mt-4  poppins">Masih bingung tentang alat kontrasepsi ? Yuk belajar !</h5>
+                    <a href="/kontrasepsi" class="btn btn-success mt-3 br-15 h6 poppins" style="margin-left: 50px;">Lihat Selengkapnya</a>
                 </div>
             </div>
             <div class="col-md-5 mt-4 mb-4" data-aos="flip-up" data-aos-duration="1000">
@@ -23,7 +23,7 @@
 </section>
 
 <section data-aos="fade-up" data-aos-duration="1000">
-    <div class="card br-15 p-15 " style="border: 2px solid black; margin-left: 50px; margin-right: 50px">
+    <div class="card br-15 p-15 poppins" style="border: 2px solid black; margin-left: 50px; margin-right: 50px">
         <h3 class=" fw-bold mb-3 ms-2">Program BKKBN</h3>
         @foreach ($programs as $coba)
         <div class="card br-10 card-program mt-3  ms-3 me-3">
@@ -40,17 +40,17 @@
 
 <section class="container">
     <div class="row mt-3 ">
-        <div class="col-md-7 tengah mt-3" data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="col-md-7 tengah mt-3" data-aos="fade-up-right" data-aos-duration="800">
             <div class=" br-15 chartKB" id="ChartKBGesi">
 
             </div>
         </div>
 
-        <div class="col-md-5 tengah mt-3" data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="col-md-5 tengah mt-3" data-aos="fade-up-left" data-aos-duration="800">
             <div class="card card-penyuluh  marleft-5 br-15 ">
                 <h3 class="poppins ">Contact Penyuluh</h3>
-                <table class="table">
-                    <thead>
+                <table class="table table-striped poppins table-hover" >
+                    <thead class="table-danger">
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Nama</th>

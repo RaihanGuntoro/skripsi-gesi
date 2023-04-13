@@ -4,11 +4,12 @@
 <section>
     <div class="row">
         <div class="col-md-7" data-aos="fade-left" data-aos-duration="900">
-            <div class="container">
-                <div class="card mt-5 br-15 ">
-                    <div class="card-body ">
-                        <h3 class="poppins text-center">Daftar Program</h3>
-                        <table class="table mt-4">
+
+            <div class="card mt-5 br-15 poppins">
+                <div class="card-body ">
+                    <h3 class="poppins text-center">Daftar Program</h3>
+                    <div class="table-responsive">
+                        <table class="table mt-4 table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
@@ -23,7 +24,7 @@
                                 @php
                                 $nomor = 1;
                                 @endphp
-
+    
                                 @foreach ($program as $item)
                                 <tr>
                                     <th scope="row"> {{ $nomor++ }} </th>
@@ -32,19 +33,20 @@
                                     <td> {{ $item -> pelaksanaan_program }} </td>
                                     <td> <a href="/tampilkan_program/{{ $item -> id }}" class="btn btn-edit ">Edit</a> </td>
                                     <td> <a href="/delete_program/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>
-
+    
                                 </tr>
                                 @endforeach
-
+    
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
 
+
         </div>
-        <div class="col-md-5" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card mt-5 br-15 me-2 mlmr-10">
+        <div class="col-md-5" data-aos="fade-up" data-aos-duration="800">
+            <div class="card mt-5 br-15 me-2 mlmr-10 poppins">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Tambah Program</h3>
                     <form class="mt-3" method="post" action="/edit_program">

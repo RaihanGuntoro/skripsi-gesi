@@ -8,47 +8,49 @@
                 <div class="card mt-5 br-15  card-admin mw-60">
                     <div class="card-body ">
                         <h3 class="poppins text-center">Daftar Kontrasepsi</h3>
-                        <table class="table mt-4">
-                            <thead>
-                                <tr>
-                                    <th scope="col">No</th>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col">Gambar</th>
-                                    <th scope="col">Jumlah</th>
-                                    <th scope="col">Deskripsi</th>
-                                    <th scope="col">Action</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                        <div class="table-responsive">
+                            <table class="table mt-4 poppins table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Nama</th>
+                                        <th scope="col">Gambar</th>
+                                        <th scope="col">Jumlah</th>
+                                        <th scope="col">Deskripsi</th>
+                                        <th scope="col">Action</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-                                @php
+                                    @php
                                     $nomor = 1;
-                                @endphp
+                                    @endphp
 
-                                @foreach ($kontrasepsis as $item)
-                                <tr>
-                                    <th scope="row"> {{ $nomor++ }} </th>
-                                    <td> {{ $item -> nama_kontrasepsi }} </td>
-                                    <td>
-                                        <img src=" {{ asset('gambarkontrasepsi/'. $item->gambar_kontrasepsi)}}" style="width: 50px" alt="">
-                                    </td>
-                                    <td> {{ $item -> jumlah_kontrasepsi }} </td>
-                                    <td> {{ $item -> deskripsi_kontrasepsi }} </td>
-                                    <td> <a href="/tampilkan_kontrasepsi/{{ $item -> id }}" class="btn btn-edit ">Edit</a> </td>
-                                    <td> <a href="/delete_kontrasepsi/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>
-                                </tr>
-                                @endforeach
+                                    @foreach ($kontrasepsis as $item)
+                                    <tr>
+                                        <th scope="row"> {{ $nomor++ }} </th>
+                                        <td> {{ $item -> nama_kontrasepsi }} </td>
+                                        <td>
+                                            <img src=" {{ asset('gambarkontrasepsi/'. $item->gambar_kontrasepsi)}}" style="width: 50px" alt="">
+                                        </td>
+                                        <td> {{ $item -> jumlah_kontrasepsi }} </td>
+                                        <td> {{ $item -> deskripsi_kontrasepsi }} </td>
+                                        <td> <a href="/tampilkan_kontrasepsi/{{ $item -> id }}" class="btn btn-edit ">Edit</a> </td>
+                                        <td> <a href="/delete_kontrasepsi/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>
+                                    </tr>
+                                    @endforeach
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </center>
 
         <div class="container" data-aos="zoom-in-down" data-aos-duration="1000">
-            <div class="card mt-5 br-15  card-admin mw-60 mx-5">
+            <div class="card mt-5 br-15  card-admin mw-60 mx-5 poppins">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Tambah Kontrasepsi</h3>
                     <form class="mt-3" method="post" action="/edit_kontrasepsi" enctype="multipart/form-data">
@@ -73,7 +75,7 @@
                             <label for="deskripsi_kontrasepsi" class="form-label">Deskripsi Kontrasepsi</label>
                             <input type="text" class="form-control" id="deskripsi_kontrasepsi" name="deskripsi_kontrasepsi" autocomplete="off">
                         </div>
-                        <button type="submit"  class=" btn btn-tambah mt-1">Tambah</button>
+                        <button type="submit" class=" btn btn-tambah mt-1">Tambah</button>
                     </form>
                 </div>
             </div>

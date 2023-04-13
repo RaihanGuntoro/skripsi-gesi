@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <!-- KOREWA BOKU NO CSS DA -->
     <link rel="stylesheet" href="css/style.css">
     <title>Halaman Edit</title>
@@ -19,10 +21,10 @@
     <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow ">
         <div class="container-fluid justify-content-between">
 
-            <a href="/"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
+            <a href="/edit_utama"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
             <div class="d-flex">
                 <h3 class="teks-navbar mt-2 me-5">BKKBN Kecamatan Gesi</h3>
-                <a class="btn btn-blue2 mt-2  me-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <a class="btn btn-blue2 mt-2 poppins  me-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     Keluar
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

@@ -48,6 +48,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/update_pengguna/{id}',  [PenggunaController::class, 'update']);
 
     Route::get('/edit_total',  [PenggunaController::class, 'index_total']);
+    Route::post('/edit_total',  [PenggunaController::class, 'create_total']);
     Route::get('/tampilkan_total/{id}',  [PenggunaController::class, 'tampilkan_total']);
     Route::post('/update_total/{id}',  [PenggunaController::class, 'update_total']);
 

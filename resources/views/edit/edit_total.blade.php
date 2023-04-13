@@ -3,15 +3,14 @@
 
 <section>
     <div class="row">
-        <center>
-            <div class="container" data-aos="fade-down-right" data-aos-duration="1000">
-                <div class="card mt-5 br-15  card-admin mw-60">
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-between">
-                            <h3 class="poppins text-center ms-3">Jumlah Total Akseptor</h3>
-                        </div>
-
-                        <table class="table mt-3">
+        <div class="col-md-7" data-aos="fade-up-right" data-aos-duration="800">
+            <div class="card mt-5 br-15  card-admin mw-60 poppins">
+                <div class="card-body ">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="poppins text-center ms-3">Jumlah Total Akseptor</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table mt-3 poppins table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
@@ -40,7 +39,36 @@
                     </div>
                 </div>
             </div>
-        </center>
+        </div>
+
+        <div class="col-md-5" data-aos="fade-up-left" data-aos-duration="800">
+            <div class="card mt-5 br-15 me-2 mlmr-10 poppins">
+                <div class="card-body ">
+                    <h3 class="poppins text-center"> Total Akseptor KB</h3>
+                    <form class="mt-3" method="post" action="/edit_total">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="desa" class="form-label">Nama Desa</label>
+                            <select class="form-select" id="desa" name="desa" aria-label="Default select example">
+                                <option selected>Pilih Desa</option>
+                                <option value="Gesi">Gesi</option>
+                                <option value="Blangu">Blangu</option>
+                                <option value="Pilangsari">Pilangsari</option>
+                                <option value="Poleng">Poleng</option>
+                                <option value="Slendro">Slendro</option>
+                                <option value="Srawung">Srawung</option>
+                                <option value="Tanggan">Tanggan</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="total_pengguna" class="form-label">Total Akseptor</label>
+                            <input type="text" class="form-control" id="total_pengguna" name="total_pengguna" autocomplete="off">
+                        </div>
+                        <button type="submit" class=" btn btn-tambah mt-1">Tambah</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

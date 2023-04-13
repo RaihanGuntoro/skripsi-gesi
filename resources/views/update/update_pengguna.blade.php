@@ -9,6 +9,8 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <!-- GOOGLE FONTS -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <!-- KOREWA BOKU NO CSS DA -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Update Pengguna</title>
@@ -16,7 +18,7 @@
 
 <body style="background-image: url(../img/bg1.png)">
 
-    <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow ">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow poppins">
         <div class="container-fluid justify-content-between">
 
             <img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0">
@@ -38,7 +40,7 @@
     <div>
 
         <div class="container" data-aos="fade-down-right" data-aos-duration="1000"> 
-            <div class="card mt-5 br-15  ">
+            <div class="card mt-5 br-15 poppins ">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Update Pengguna</h3>
                     <form class="mt-3" method="post" action="/update_pengguna/{{$data->id}}">

@@ -94,4 +94,10 @@ class PenggunaController extends Controller
         return redirect('edit_total');
     }
 
+    public function create_total ( Request $request)
+    {
+        total::create($request->all());
+        return redirect('/edit_total');
+    }
+
 }
