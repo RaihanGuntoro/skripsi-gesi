@@ -1,13 +1,14 @@
 @extends('layouts.main')
 @section('home')
 <section>
-    <div style="background-image: url(img/bg1.png);" class="mb-4">
+    <div style="background-image: url(img/bg1.png);" class="mb-4 shadow-lg">
         <div class="row">
             <div class="col-md-7" data-aos="fade-right" data-aos-duration="1000">
                 <div class="mt-5 p-4">
                     <h1 class="text-center w-100 fw-bold poppins">Selamat Datang di Website BKKBN Kecamatan Gesi</h1>
-                    <h5 class="text-center w-100 mt-4  poppins">Masih bingung tentang alat kontrasepsi ? Yuk belajar !</h5>
-                    <a href="/kontrasepsi" class="btn btn-success mt-3 br-15 h6 poppins" style="margin-left: 50px;">Lihat Selengkapnya</a>
+                    <h5 class="text-center w-100 mt-4  poppins">Belum tau tentang berbagai jenis alat kontrasepsi ?</h5>
+                    <h5 class="text-center w-100 poppins">Klik tombol dibawah !</h5>
+                    <a href="/kontrasepsi" class="btn shadow-lg btn-success mt-3 br-15 h6 poppins" style="margin-left: 70px;">Jenis-jenis Alat Kontrasepsi</a>
                 </div>
             </div>
             <div class="col-md-5 mt-4 mb-4" data-aos="flip-up" data-aos-duration="1000">
@@ -23,34 +24,48 @@
 </section>
 
 <section data-aos="fade-up" data-aos-duration="1000">
-    <div class="card br-15 p-15 poppins" style="border: 2px solid black; margin-left: 50px; margin-right: 50px">
-        <h3 class=" fw-bold mb-3 ms-2">Program BKKBN</h3>
+    <div class=" br-15 p-15 poppins" style="border: 2px solid #38ABF2; margin-left: 50px; margin-right: 50px">
+        <h3 class="text-center fw-bold mb-4 ">Program BKKBN Kecamatan Gesi</h3>
+
         @foreach ($programs as $coba)
-        <div class="card br-10 card-program mt-3  ms-3 me-3">
-
-            <h4> {{ $coba -> nama_program }} </h4>
-            <h6> {{ $coba -> tanggal_program }} </h6>
-            <h5> {{ $coba -> lokasi_program }} </h5>
+        <div class="card br-10 card-program mt-3 ms-3 me-3">
+            <h4 class="fw-bold mb-3"> Acara {{ $coba -> nama_program }} </h4>
+            <h5> Di {{ $coba -> lokasi_program }}</h5>
+            <h5>Pada {{ $coba -> tanggal_program }} </h5>
             <h5 style="color: red;"> {{ $coba -> pelaksanaan_program }} </h5>
-
         </div>
         @endforeach
+
     </div>
 </section>
 
 <section class="container">
     <div class="row mt-3 ">
-        <div class="col-md-7 tengah mt-3" data-aos="fade-up-right" data-aos-duration="800">
-            <div class=" br-15 chartKB" id="ChartKBGesi">
+        <div class=" tengah mt-4 poppins" data-aos="fade-right" data-aos-duration="600">
+            <center>
+                <h3 class="text-center fw-bold mb-2 ">Grafik Akseptor KB Berdasarkan Desa</h3>
+                <div class="br-15" style="max-width: 80%;" id="ChartKBGesi">
 
+
+                </div>
+            </center>
+        </div>
+        <div class=" tengah mt-3" data-aos="fade-up" data-aos-duration="600">
+            <div class="card card-kata br-15 text-center">
+                <h4 class="poppins">Mereka sudah menerapkan prinsip Keluarga Berencana, </h4>
+                <h4 class="poppins">bagaimana dengan Anda?</h4>
             </div>
         </div>
 
-        <div class="col-md-5 tengah mt-3" data-aos="fade-up-left" data-aos-duration="800">
-            <div class="card card-penyuluh  marleft-5 br-15 ">
-                <h3 class="poppins ">Contact Penyuluh</h3>
-                <table class="table table-striped poppins table-hover" >
-                    <thead class="table-danger">
+        <div class="col-md-6 tengah mt-3" data-aos="fade-right" data-aos-duration="600">
+            <img src="img/text-penyuluh.png" width="100%" alt="">
+        </div>
+
+        <div class=" col-md-6 tengah mt-5" data-aos="fade-left" data-aos-duration="600">
+            <div class="card card-penyuluh br-15 ">
+                <h4 class="poppins fw-bold">Contact Penyuluh</h4>
+                <table class="table poppins table-hover">
+                    <thead class="table-primary">
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Nama</th>
@@ -90,7 +105,7 @@
             type: 'column'
         },
         title: {
-            text: 'Grafik Akseptor KB Tiap Desa'
+            text: ''
         },
         subtitle: {
             text: 'Tahun 2023'
@@ -102,7 +117,7 @@
         yAxis: {
 
             title: {
-                text: 'Jumlah Akseptor'
+                text: 'Jumlah Pengguna'
             }
         },
         tooltip: {
@@ -120,7 +135,7 @@
             }
         },
         series: [{
-            name: 'Akseptor',
+            name: 'Jumlah Pengguna KB',
             data: total_pengguna
 
         }, ]

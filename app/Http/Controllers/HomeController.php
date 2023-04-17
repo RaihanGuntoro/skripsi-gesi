@@ -20,9 +20,9 @@ class HomeController extends Controller
         ->pluck("total_pengguna");
 
         return view('home', [
-            "title" => "Halaman Utama",
+            "title" => "BKKBN Kecamatan Gesi",
             "programs" => program::all(),
-            "penyuluh" => penyuluh::all(),  //program mengambil dari model
+            "penyuluh" => penyuluh::all(),  //penyuluh mengambil dari model
         ], compact("desa", "total_pengguna"));
     }
 }

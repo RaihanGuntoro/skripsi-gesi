@@ -49,8 +49,8 @@
                             <input value="{{$data->nama_program}}" type="text" class="form-control" id="nama_program" name="nama_program" autocomplete="off">
                         </div>
                         <div class="mb-3">
-                            <label for="tanggal_program" class="form-label">Tanggal Program</label>
-                            <input value="{{$data->tanggal_program}}" type="date" class="form-control" id="tanggal_program" name="tanggal_program" autocomplete="off">
+                            <label for="tanggal_program" class="form-label">Hari dan tanggal Program</label>
+                            <input value="{{$data->tanggal_program}}" type="text" class="form-control" id="tanggal_program" name="tanggal_program" autocomplete="off">
                         </div>
                         <div class="mb-3">
                             <label for="lokasi_program" class="form-label">Lokasi Program</label>

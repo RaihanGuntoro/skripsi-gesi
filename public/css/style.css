@@ -31,7 +31,7 @@
 
 .card-penyuluh {
     /* background-color:  #38ABF2; */
-    border: 2px solid black;
+    border: 2px solid #38ABF2;
     padding: 20px 20px 20px;
     /* background-color: #38ABF2; */
 }
@@ -50,6 +50,15 @@
     background-color: #C8E9FD;
     box-shadow: 0px 2px 0px rgb(208, 205, 205);
     border: 1px solid #C8E9FD;
+}
+
+.card-kata{
+    border-radius: 15px;
+    background-color: #38ABF2;
+    border: none;
+    color: white;
+    height: 100px;
+    padding: 10px 10px 10px;
 }
 
 .card-motivasi {
@@ -139,6 +148,7 @@
     cursor: pointer;
     border-radius: 10px;
     width: 80px;
+    max-width: 70px;
 }
 
 .btn-edit:hover {
