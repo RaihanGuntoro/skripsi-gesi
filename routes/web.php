@@ -44,6 +44,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/tambah_pengguna',  [PenggunaController::class, 'create']);
     Route::get('/delete_pengguna/{id}',  [PenggunaController::class, 'delete']);
     Route::get('/export_pengguna',  [PenggunaController::class, 'export']);
+    Route::post('/import_pengguna',  [PenggunaController::class, 'import']);
     Route::get('/tampilkan_pengguna/{id}',  [PenggunaController::class, 'tampilkan']);
     Route::post('/update_pengguna/{id}',  [PenggunaController::class, 'update']);
 

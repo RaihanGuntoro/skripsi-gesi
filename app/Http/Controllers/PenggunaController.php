@@ -6,6 +6,7 @@ use App\Models\total;
 use App\Models\pengguna;
 use Illuminate\Http\Request;
 use App\Exports\exportpengguna;
+use App\Imports\importpengguna;
 use Illuminate\Routing\Controller;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -20,7 +21,7 @@ class PenggunaController extends Controller
         ->orWhere('alamat_pengguna', 'LIKE', '%'.$filter.'%')
         ->orWhere('umur_pengguna', 'LIKE', '%'.$filter.'%')
         ->orWhere('kontrasepsi_pengguna', 'LIKE', '%'.$filter.'%')
-        ->paginate(5);   //pagination
+        ->paginate(10);   //pagination
 
         $pengguna -> appends($request->all());
 
@@ -50,28 +51,38 @@ class PenggunaController extends Controller
         return redirect('/edit_pengguna');
     }
 
-    public function export()
-    {
-        return Excel::download(new exportpengguna, 'DataPenggunaKBGesi.xlsx');
-    }
-
+    
     public function tampilkan($id)
     {
         $data = pengguna::find($id);
-
+        
         return view('update/update_pengguna', compact('data'));
     }
-
+    
     public function update(Request $request, $id)
     {
         $data = pengguna::find($id);
         $data->update($request->all());
         return redirect('edit_pengguna');
     }
+    
+    public function export()
+    {
+        return Excel::download(new exportpengguna, 'DataPenggunaKBGesi.xlsx');
+    }
 
+    public function import(Request $request)
+    {
+        $data = $request -> file('file');
+        $namafile = $data -> getClientOriginalName();
+        $data -> move('datapengguna', $namafile);
 
-    ################################## TOTAL
-
+        Excel::import(new importpengguna, \public_path('/datapengguna/'.$namafile));
+        return redirect('/edit_pengguna');
+    }
+    
+    ################################## TOTAL #########################
+    
     public function index_total()    //nama methodnya index
     {
         return view('edit/edit_total', [
