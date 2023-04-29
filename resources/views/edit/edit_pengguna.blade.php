@@ -33,10 +33,10 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col">Nama</th>
-                                        <th scope="col">Nomor</th>
+                                        <th scope="col">Nama Istri</th>
+                                        <th scope="col">Nama Suami</th>
+                                        <th scope="col">Umur Istri</th>
                                         <th scope="col">Alamat</th>
-                                        <th scope="col">Umur</th>
                                         <th scope="col">Alat Kontrasepsi</th>
                                         <th scope="col">Action</th>
                                         <th scope="col"></th>
@@ -51,10 +51,10 @@
                                     @foreach ($pengguna as $index => $item)
                                     <tr>
                                         <th scope="row"> {{ $index + $pengguna -> firstItem() }} </th>
-                                        <td> {{ $item -> nama_pengguna }} </td>
-                                        <td> {{ $item -> nomor_pengguna }} </td>
+                                        <td> {{ $item -> nama_istri }} </td>
+                                        <td> {{ $item -> nama_suami }} </td>
+                                        <td> {{ $item -> umur_istri }} </td>
                                         <td>{{ $item -> alamat_pengguna }}</td>
-                                        <td> {{ $item -> umur_pengguna }} </td>
                                         <td> {{ $item -> kontrasepsi_pengguna }} </td>
                                         <td> <a href="/tampilkan_pengguna/{{ $item -> id }}" class="btn btn-edit ">Edit</a> </td>
                                         <td> <a href="/delete_pengguna/{{ $item -> id }}" class="btn btn-danger br-10">Delete</a> </td>

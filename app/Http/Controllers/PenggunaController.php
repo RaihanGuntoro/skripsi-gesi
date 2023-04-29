@@ -16,10 +16,9 @@ class PenggunaController extends Controller
     {
         $filter = $request->filter_key;
 
-        $pengguna = pengguna::where('nama_pengguna', 'LIKE', '%'.$filter.'%')
-        ->orWhere('nomor_pengguna', 'LIKE', '%'.$filter.'%')
+        $pengguna = pengguna::where('nama_istri', 'LIKE', '%'.$filter.'%')
+        ->orWhere('nama_suami', 'LIKE', '%'.$filter.'%')
         ->orWhere('alamat_pengguna', 'LIKE', '%'.$filter.'%')
-        ->orWhere('umur_pengguna', 'LIKE', '%'.$filter.'%')
         ->orWhere('kontrasepsi_pengguna', 'LIKE', '%'.$filter.'%')
         ->paginate(10);   //pagination
 

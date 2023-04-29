@@ -46,12 +46,16 @@
                     <form class="mt-3" method="post" action="/update_pengguna/{{$data->id}}">
                         @csrf
                         <div class="mb-3">
-                            <label for="nama_pengguna" class="form-label">Nama Pengguna</label>
-                            <input value="{{$data->nama_pengguna}}" type="text" class="form-control" id="nama_pengguna" name="nama_pengguna" autocomplete="off">
+                            <label for="nama_istri" class="form-label">Nama Istri</label>
+                            <input value="{{$data->nama_istri}}" type="text" class="form-control" id="nama_istri" name="nama_istri" autocomplete="off">
                         </div>
                         <div class="mb-3">
-                            <label for="nomor_pengguna" class="form-label">Nomor Pengguna</label>
-                            <input value=" {{$data->nomor_pengguna}}" type="text" class="form-control" id="nomor_pengguna" name="nomor_pengguna" autocomplete="off">
+                            <label for="nama_suami" class="form-label">Nama Suami</label>
+                            <input value="{{$data->nama_suami}}" type="text" class="form-control" id="nama_suami" name="nama_suami" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="umur_istri" class="form-label">Umur Istri</label>
+                            <input value="{{$data->umur_istri}}" type="text" class="form-control" id="umur_istri" name="umur_istri" autocomplete="off">
                         </div>
                         <div class="mb-3">
                             <label for="alamat_pengguna" class="form-label">Alamat Pengguna</label>
@@ -65,10 +69,6 @@
                                 <option value="Srawung">Srawung</option>
                                 <option value="Tanggan">Tanggan</option>
                             </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="umur_pengguna" class="form-label">Umur Pengguna</label>
-                            <input value="{{$data->umur_pengguna}}" type="text" class="form-control" id="umur_pengguna" name="umur_pengguna" autocomplete="off">
                         </div>
                         <div class="mb-3">
                             <label for="kontrasepsi_pengguna" class="form-label">kontrasepsi Pengguna</label>

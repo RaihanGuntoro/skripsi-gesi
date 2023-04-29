@@ -53,7 +53,7 @@
                             <center>
                                 <img src="img/icon/penyuluh.png" width="80px" alt="..." class="mt-3">
                                 <div class="card-body">
-                                    <h3 class=" card-title fw-bold">PLKB</h3>
+                                    <h3 class=" card-title fw-bold">PKB</h3>
                                     <h6 class="card-text">Anda dapat mengolah data penyuluh KB.</h6>
                                 </div>
                             </center>

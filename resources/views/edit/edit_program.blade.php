@@ -48,7 +48,7 @@
         </center>
 
         <div class="">
-            <div class="card mt-5 br-15 poppins container " data-aos="fade-up" data-aos-duration="800">
+            <div class="card mt-3 br-15 poppins container " data-aos="fade-up" data-aos-duration="800">
                 <div class="card-body ">
                     <h3 class="poppins text-center">Tambah Program</h3>
                     <form class="mt-3" method="post" action="/edit_program">

@@ -15,10 +15,10 @@ class CreatePenggunasTable extends Migration
     {
         Schema::create('penggunas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_pengguna');
-            $table->string('nomor_pengguna');
+            $table->string('nama_istri');
+            $table->string('nama_suami');
+            $table->string('umur_istri');
             $table->text('alamat_pengguna');
-            $table->string('umur_pengguna');
             $table->string('kontrasepsi_pengguna');
             $table->timestamps();
         });
