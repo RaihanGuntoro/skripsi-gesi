@@ -23,7 +23,7 @@
 
             <a href="/edit_utama"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
             <div class="d-flex">
-                <h3 class="teks-navbar mt-2 me-5">BKKBN Kecamatan Gesi</h3>
+
                 <a class="btn btn-blue2 mt-2 poppins  me-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                     Keluar
                 </a>

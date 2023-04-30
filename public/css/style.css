@@ -57,7 +57,7 @@
     background-color: #38ABF2;
     border: none;
     color: white;
-    height: 100px;
+    height: 105px;
     padding: 10px 10px 10px;
 }
 
@@ -230,6 +230,10 @@ footer{
         border-radius: 20px;
         border: none;
         margin-top: 10px;
+    }
+
+    .text-tengah {
+        text-align: center;
     }
 }
 

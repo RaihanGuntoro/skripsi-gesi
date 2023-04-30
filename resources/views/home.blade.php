@@ -4,7 +4,7 @@
     <div style="background-image: url(img/bg1.png);" class="mb-4 shadow-lg">
         <div class="row">
             <div class="col-md-7" data-aos="fade-right" data-aos-duration="1000">
-                <div class="mt-5 p-4">
+                <div class="martop-10 p-4">
                     <h1 class="text-center w-100 fw-bold poppins">Selamat Datang di Website BKKBN Kecamatan Gesi</h1>
                     <h5 class="text-center w-100 mt-4  poppins">Belum tau tentang berbagai jenis alat kontrasepsi ?</h5>
                     <h5 class="text-center w-100 poppins">Klik tombol dibawah !</h5>
@@ -24,11 +24,11 @@
 </section>
 
 <section data-aos="fade-up" data-aos-duration="1000">
-    <div class=" br-15 p-15 poppins" style="border: 2px solid #38ABF2; margin-left: 50px; margin-right: 50px; ">
-        <h3 class="text-center fw-bold mb-4 ">Program BKKBN Kecamatan Gesi</h3>
+    <div class=" br-15  poppins" style="border: 2px solid #38ABF2; margin-left: 30px; margin-right: 30px; ">
+        <h3 class="text-center fw-bold mb-4 mt-3 ">Program BKKBN Kecamatan Gesi</h3>
 
         @foreach ($programs as $coba)
-        <div class="card br-10 card-program mt-3 ms-3 me-3">
+        <div class="card br-10 card-program mt-3 ms-3 mb-3 me-3">
             <h5 class="fw-bold "> Acara {{ $coba -> nama_program }} </h5>
             <h7 class="mb-2">{{ $coba -> tanggal_program }} </h7>
             <h6> Di {{ $coba -> lokasi_program }}</h6>
@@ -39,12 +39,12 @@
     </div>
 </section>
 
-<section class="container" data-aos="fade-right" data-aos-duration="600">
+<section class="" data-aos="fade-right" data-aos-duration="600">
     <div class="row mt-3 ">
         <div class=" tengah mt-4 poppins" >
             <center>
-                <h3 class="text-center fw-bold mb-2 ">Grafik Akseptor KB Berdasarkan Desa</h3>
-                <div class="br-15" style="max-width: 80%;" id="ChartKBGesi">
+                <h3 class="text-center ms-3 me-3 fw-bold mb-2 ">Grafik Akseptor KB Berdasarkan Desa</h3>
+                <div class="br-15" style="max-width: 90%;" id="ChartKBGesi">
 
 
                 </div>

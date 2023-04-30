@@ -20,7 +20,6 @@
     <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow-sm br-5">
         <div class="container-fluid justify-content-between">
             <img src="img/bkkbn.png" alt="" width="120px" class="ms-3 me-4 mt-0">
-            <h3 class="teks-navbar mt-2 ">BKKBN Kecamatan Gesi</h3>
         </div>
     </nav>
 
@@ -36,7 +35,7 @@
 
             </div>
             <div class="col-md-5" data-aos="fade-left" data-aos-duration="900">
-                <div class="card me-4  mt-100 br-10 card1">
+                <div class="card   mt-100 br-10 card1">
                     <div class="card-body mx-4 ">
 
                         <form action="{{ route('login') }}" method="POST">

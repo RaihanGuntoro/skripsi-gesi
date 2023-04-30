@@ -10,17 +10,17 @@
                         <div class=" justify-content-between">
                             <h2 class="poppins text-center ">Daftar Pengguna</h2>
 
-                            <div class="d-flex justify-content-between mt-4">
-                                <div class="ms-4">
-                                    <a href="/tambah_pengguna" class="btn btn-tambah br-10 me-2">Tambah +</a>
-                                    <a href="/edit_total" class="btn btn-tambah br-10 me-2">Total</a>
-                                    <button type="button" class="btn btn-success me-2 br-10" data-bs-toggle="modal" data-bs-target="#exampleModal">Import Excel</button>
-                                    <a href="/export_pengguna" class="btn btn-success me-2 br-10 ">Export Excel</a>
+                            <div class=" row justify-content-between mt-4">
+                                <div class="row col-md-7 ">
+                                    <a href="/tambah_pengguna" class="martop-5 col-md-3 btn btn-tambah br-10 me-2">Tambah +</a>
+                                    <a href="/edit_total" class="martop-5 col-md-3 btn btn-tambah br-10 me-2">Total</a>
+                                    <button type="button" style="width:140px" class="martop-5 col-md-3 btn btn-tambah me-2 br-10" data-bs-toggle="modal" data-bs-target="#exampleModal">Import Excel</button>
+                                    <a href="/export_pengguna" style="width:140px" class="martop-5 col-md-3 btn btn-tambah  br-10 ">Export Excel</a>
                                 </div>
                                 <!--FILTER-->
-                                <form method="GET" action="/edit_pengguna">
+                                <form class="col-md-5 martop-5" method="GET" action="/edit_pengguna">
                                     <div class="d-flex">
-                                        <input type="text" name="filter_key" class="form-control" placeholder="Cari" autocomplete="off">
+                                        <input  type="text" name="filter_key" class="form-control" placeholder="Cari" autocomplete="off">
                                         <button type="submit" class="ms-2 btn btn-tambah mt-1">Cari</button>
                                     </div>
                                 </form>

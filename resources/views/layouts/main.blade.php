@@ -22,12 +22,10 @@
             <div class="container-fluid justify-content-between">
 
                 <a href="/"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
-                <div class="d-flex">
-                    <h3 class="teks-navbar mt-2 me-5">BKKBN Kecamatan Gesi</h3>
+              
                     <a href="/login" class="btn btn-blue2 mt-2 me-3">
                         <h6> Masuk</h6>
                     </a>
-                </div>
 
             </div>
         </nav>
