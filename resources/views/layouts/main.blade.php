@@ -37,8 +37,10 @@
         @yield('home')
     </div>
 
+
     <div class="row">
-        <div class="col-md-6" data-aos="fade-right" data-aos-duration="700">
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="700">
             <div class="mt-3 mb-5 poppins" style="margin-left: 20%;">
                 <img src="img/bkkbn.png" width="200px" class="mb-3" alt="">
                 <h4 class="mb-3">BKKBN Kecamatan Gesi</h4>
@@ -47,23 +49,11 @@
                 <h6> Kode Pos 57262</h6>
             </div>
         </div>
-        <!-- <div class="col-md-6">
-            <div class="container">
-                <center>
-                    <div class="card card-motivasi text-center martop-10 " style="max-width: 400px;">
-                        <h5 class="text-center">Ingatlah, saat semuanya runtuh dan gagal, keluarga adalah tempatmu kembali. Rencanakanlah dengan tepat, konsultasikanlah sebelum terlambat.</h5>
-                        <h4 class="fw-bold text-center">BKKBN Kecamatan Gesi</h4>
-                    </div>
-                </center>
 
-            </div>
-        </div> -->
     </div>
 
-
-
-    <footer class="text-center">
-        <h7>Copy Right BKKBN Kecamatan Gesi</h7>
+    <footer class="text-center" >
+        <h7>© 2020 Copyright: BKKBN Kecamatan Gesi</h7>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

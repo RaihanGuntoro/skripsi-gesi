@@ -8,7 +8,7 @@
                     <h1 class="text-center w-100 fw-bold poppins">Selamat Datang di Website BKKBN Kecamatan Gesi</h1>
                     <h5 class="text-center w-100 mt-4  poppins">Belum tau tentang berbagai jenis alat kontrasepsi ?</h5>
                     <h5 class="text-center w-100 poppins">Klik tombol dibawah !</h5>
-                    <a href="/kontrasepsi" class="btn shadow-lg btn-success mt-3 br-15 h6 poppins" style="margin-left: 70px;">Jenis-jenis Alat Kontrasepsi</a>
+                    <center><a href="/kontrasepsi" class="btn shadow-lg btn-success mt-3 br-15 h6 poppins">Jenis-jenis Alat Kontrasepsi</a></center>
                 </div>
             </div>
             <div class="col-md-5 mt-4 mb-4" data-aos="flip-up" data-aos-duration="1000">
@@ -24,24 +24,24 @@
 </section>
 
 <section data-aos="fade-up" data-aos-duration="1000">
-    <div class=" br-15 p-15 poppins" style="border: 2px solid #38ABF2; margin-left: 50px; margin-right: 50px">
+    <div class=" br-15 p-15 poppins" style="border: 2px solid #38ABF2; margin-left: 50px; margin-right: 50px; ">
         <h3 class="text-center fw-bold mb-4 ">Program BKKBN Kecamatan Gesi</h3>
 
         @foreach ($programs as $coba)
         <div class="card br-10 card-program mt-3 ms-3 me-3">
-            <h4 class="fw-bold mb-3"> Acara {{ $coba -> nama_program }} </h4>
-            <h5> Di {{ $coba -> lokasi_program }}</h5>
-            <h5>Pada {{ $coba -> tanggal_program }} </h5>
-            <h5 style="color: red;"> {{ $coba -> pelaksanaan_program }} </h5>
+            <h5 class="fw-bold "> Acara {{ $coba -> nama_program }} </h5>
+            <h7 class="mb-2">{{ $coba -> tanggal_program }} </h7>
+            <h6> Di {{ $coba -> lokasi_program }}</h6>
+            <h6 style="color: red;"> {{ $coba -> pelaksanaan_program }} </h6>
         </div>
         @endforeach
 
     </div>
 </section>
 
-<section class="container">
+<section class="container" data-aos="fade-right" data-aos-duration="600">
     <div class="row mt-3 ">
-        <div class=" tengah mt-4 poppins" data-aos="fade-right" data-aos-duration="600">
+        <div class=" tengah mt-4 poppins" >
             <center>
                 <h3 class="text-center fw-bold mb-2 ">Grafik Akseptor KB Berdasarkan Desa</h3>
                 <div class="br-15" style="max-width: 80%;" id="ChartKBGesi">

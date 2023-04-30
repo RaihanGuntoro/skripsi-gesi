@@ -12,8 +12,8 @@
                 <div class="poppins mt-3 ms-3 border-bottom ">
                     <h4 class="fw-bold">{{ $item -> nama_kontrasepsi }}</h4>
                     <div class="d-flex">
-                        <img src="{{ asset('gambarkontrasepsi/'. $item->gambar_kontrasepsi)}}" width="150px" class="mt-3 mb-3" alt="">
-                        <h4 class="ms-4" style="width: 80%;">{{ $item -> deskripsi_kontrasepsi }}</h4>
+                        <img src="{{ asset('gambarkontrasepsi/'. $item->gambar_kontrasepsi)}}" width="150px" class=" mb-3" alt="">
+                        <h5 class="ms-4" style="width: 80%;">{{ $item -> deskripsi_kontrasepsi }}</h5>
                     </div>
                 </div>
                 @endforeach
