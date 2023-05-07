@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow ">
             <div class="container-fluid justify-content-between">
 
-                <a href="/"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
+                <a href="/"><img src="../img/bkkbn2.png" alt="" width="150px" class="ms-3 "></a>
               
                     <a href="/login" class="btn btn-blue2 mt-2 me-3">
                         <h6> Masuk</h6>

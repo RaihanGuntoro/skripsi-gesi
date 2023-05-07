@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow ">
         <div class="container-fluid justify-content-between">
 
-            <a href="/edit_utama"><img src="../img/bkkbn.png" alt="" width="120px" class="ms-3 mt-0"></a>
+            <a href="/edit_utama"><img src="../img/bkkbn2.png" alt="" width="150px" class="ms-3 mt-0"></a>
             <div class="d-flex">
 
                 <a class="btn btn-blue2 mt-2 poppins  me-3" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

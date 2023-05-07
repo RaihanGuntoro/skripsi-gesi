@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light navbar-1 shadow-sm br-5">
         <div class="container-fluid justify-content-between">
-            <img src="img/bkkbn.png" alt="" width="120px" class="ms-3 me-4 mt-0">
+            <img src="img/bkkbn2.png" alt="" width="150px" class="ms-3 me-4 mt-0">
         </div>
     </nav>
 
